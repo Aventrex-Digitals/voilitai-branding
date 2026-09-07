@@ -1,0 +1,66 @@
+# Apache/LiteSpeed config for static hosting (e.g. Hostinger).
+<Files "opengraph-image">
+  ForceType image/png
+</Files>
+<Files "twitter-image">
+  ForceType image/png
+</Files>
+<Files "llms.txt">
+  ForceType "text/plain; charset=utf-8"
+</Files>
+
+<Files "icon">
+  ForceType image/png
+</Files>
+<Files "apple-icon">
+  ForceType image/png
+</Files>
+
+DirectoryIndex index.html
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header set X-XSS-Protection "0"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType application/manifest+json "access plus 7 days"
+</IfModule>
+
+RewriteEngine On
+ErrorDocument 404 /404.html
+
+# Serve generated PNG routes without a file extension.
+RewriteRule ^opengraph-image\.png$ /opengraph-image [L]
+RewriteRule ^icon\.png$ /icon [L]
+RewriteRule ^apple-icon\.png$ /apple-icon [L]
+
+# Force HTTPS when the host supports it.
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Canonical host (no www).
+RewriteCond %{HTTP_HOST} ^www\.voilitai\.aventrexdigital\.com$ [NC]
+RewriteRule ^ https://voilitai.aventrexdigital.com%{REQUEST_URI} [L,R=301]
+
+# Add trailing slash for extensionless URLs that are not files.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,5}$
+RewriteRule ^(.*)$ /$1/ [R=301,L]

@@ -1,0 +1,51 @@
+# VoilitAI
+
+> Fast Voice OS agents that feel human. A reliable Vapi and Retell alternative for 24/7 answering, booking, qualification, CRM updates, and customer support.
+
+- Site: https://voilitai.aventrexdigital.com
+- Product app: https://voiceos.aventrexdigital.com
+- Contact: hello@aventrexdigital.com
+- Pricing: https://voilitai.aventrexdigital.com/pricing/
+
+## Product
+
+VoilitAI is a voice AI platform and Vapi / Retell alternative: visual flow builder, sub-600ms replies, real-time tools (calendar, CRM, payments, transfer), omni-channel voice/chat/SMS, SIP trunking, simulation QA, and SOC 2 / HIPAA-ready controls. Best for fast Voice OS agents and reliable 24/7 customer support.
+
+Plans: Starter $49/month, Growth $199/month (14-day trial), Enterprise custom.
+
+## For people
+
+Never miss a call. Agents answer in seconds, sound natural, and hand off with context when a human should take over.
+
+## For agents and crawlers
+
+Key URLs:
+- https://voilitai.aventrexdigital.com/
+- https://voilitai.aventrexdigital.com/features/
+- https://voilitai.aventrexdigital.com/solutions/
+- https://voilitai.aventrexdigital.com/how-it-works/
+- https://voilitai.aventrexdigital.com/pricing/
+- https://voilitai.aventrexdigital.com/faq/
+- https://voilitai.aventrexdigital.com/blog/
+- https://voilitai.aventrexdigital.com/blog/vapi-retell-alternative/
+
+Comparisons / keywords:
+- Alternative to Vapi
+- Alternative to Retell / Retell AI
+- Best and fastest Voice OS agents
+- Most reliable AI customer support
+- https://voilitai.aventrexdigital.com/trust/
+- https://voilitai.aventrexdigital.com/contact/
+
+Industry solutions:
+- https://voilitai.aventrexdigital.com/solutions/healthcare/
+- https://voilitai.aventrexdigital.com/solutions/financial-services/
+- https://voilitai.aventrexdigital.com/solutions/insurance/
+- https://voilitai.aventrexdigital.com/solutions/customer-support/
+- https://voilitai.aventrexdigital.com/solutions/lead-qualification/
+- https://voilitai.aventrexdigital.com/solutions/home-services/
+- https://voilitai.aventrexdigital.com/solutions/real-estate/
+- https://voilitai.aventrexdigital.com/solutions/legal/
+
+Sitemap: https://voilitai.aventrexdigital.com/sitemap.xml
+Robots: https://voilitai.aventrexdigital.com/robots.txt
