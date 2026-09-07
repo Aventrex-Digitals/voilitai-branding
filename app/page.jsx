@@ -31,13 +31,18 @@ import {
   HOME_FAQS,
 } from '@/lib/content';
 import { SOLUTIONS } from '@/lib/solutions';
+import { getPublicPlans } from '@/lib/voilit-plans';
 
 export const metadata = PAGE_META.home;
 
-export default function HomePage() {
+export const revalidate = 60;
+
+export default async function HomePage() {
+  const plans = await getPublicPlans();
+
   return (
     <>
-      <JsonLd data={softwareJsonLd()} />
+      <JsonLd data={softwareJsonLd(plans)} />
       <JsonLd data={faqJsonLd(HOME_FAQS)} />
       <JsonLd
         data={webPageJsonLd({
@@ -301,7 +306,7 @@ export default function HomePage() {
           <h2 className="font-display mt-4 text-3xl font-bold sm:text-4xl">Simple plans. Production-ready from day one.</h2>
         </AnimateIn>
         <div className="mt-12">
-          <PricingCards />
+          <PricingCards plans={plans} />
         </div>
       </section>
 

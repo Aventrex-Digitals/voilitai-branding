@@ -1,5 +1,3 @@
-import { POSTS } from '@/lib/posts';
-import { SOLUTIONS } from '@/lib/solutions';
 import { SITE_URL } from '@/lib/site';
 
 export const dynamic = 'force-static';

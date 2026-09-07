@@ -1,13 +1,23 @@
 import Link from 'next/link';
 import BookDemoButton from '@/components/BookDemoButton';
-import { PRICING_PLANS } from '@/lib/content';
 
-export default function PricingCards() {
+export default function PricingCards({ plans = [] }) {
+  if (!plans.length) {
+    return (
+      <div className="mx-auto max-w-lg py-8 text-center">
+        <p className="text-lg text-[var(--fg-muted)]">Plans will appear here shortly.</p>
+        <p className="mt-3 text-sm text-[var(--fg-muted)]">
+          Talk to us if you need a quote in the meantime.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="grid gap-6 lg:grid-cols-3">
-      {PRICING_PLANS.map((plan) => {
+      {plans.map((plan) => {
         const isDemo = plan.href === '#book-demo';
-        const isExternal = plan.href.startsWith('http');
+        const isExternal = typeof plan.href === 'string' && plan.href.startsWith('http');
         const Cta = isExternal ? 'a' : Link;
         const ctaProps = isExternal
           ? { href: plan.href, rel: 'noopener noreferrer' }
@@ -15,27 +25,21 @@ export default function PricingCards() {
 
         return (
           <article
-            key={plan.name}
+            key={plan.key || plan.name}
             className={`premium-card relative flex flex-col p-7 ${
               plan.highlighted ? 'ring-1 ring-violet-deep/35' : ''
             }`}
           >
-            {plan.badge && (
+            {plan.badge ? (
               <p className="absolute -top-3 left-6 rounded-full bg-violet-deep px-3 py-1 text-xs font-semibold text-white">
                 {plan.badge}
               </p>
-            )}
+            ) : null}
             <h3 className="font-display text-xl font-bold">{plan.name}</h3>
             <p className="mt-2 min-h-12 text-sm text-[var(--fg-muted)]">{plan.description}</p>
             <p className="mt-6 flex items-end gap-1">
-              {plan.price === 'Custom' ? (
-                <span className="font-display text-4xl font-bold">Custom</span>
-              ) : (
-                <>
-                  <span className="font-display text-4xl font-bold">${plan.price}</span>
-                  <span className="pb-1 text-sm text-[var(--fg-muted)]">{plan.period}</span>
-                </>
-              )}
+              <span className="font-display text-4xl font-bold">${plan.price}</span>
+              <span className="pb-1 text-sm text-[var(--fg-muted)]">{plan.period}</span>
             </p>
             <p className="mt-2 text-xs text-[var(--fg-muted)]">{plan.overage}</p>
             <ul className="mt-6 flex-1 space-y-2.5 text-sm">

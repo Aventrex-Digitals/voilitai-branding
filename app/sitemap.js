@@ -1,11 +1,12 @@
-import { POSTS } from '@/lib/posts';
 import { SOLUTIONS } from '@/lib/solutions';
+import { getBlogPosts } from '@/lib/aventrex-blog';
 import { absoluteUrl } from '@/lib/site';
 
-export const dynamic = 'force-static';
+export const revalidate = 60;
 
-export default function sitemap() {
-  const lastModified = new Date('2026-09-07T00:00:00.000Z');
+export default async function sitemap() {
+  const lastModified = new Date();
+  const posts = await getBlogPosts();
 
   const staticPages = [
     { path: '/', priority: 1, changeFrequency: 'weekly' },
@@ -35,9 +36,9 @@ export default function sitemap() {
       changeFrequency: 'monthly',
       priority: 0.8,
     })),
-    ...POSTS.map((post) => ({
+    ...posts.map((post) => ({
       url: absoluteUrl(`/blog/${post.slug}/`),
-      lastModified: new Date(`${post.date}T00:00:00.000Z`),
+      lastModified: post.date ? new Date(`${post.date}T00:00:00.000Z`) : lastModified,
       changeFrequency: 'monthly',
       priority: 0.7,
     })),
