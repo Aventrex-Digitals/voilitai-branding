@@ -299,6 +299,7 @@ html.dark .glass-panel {
   letter-spacing: -0.02em;
   color: var(--fg);
   margin-top: 2.5rem;
+  scroll-margin-top: 6rem;
 }
 
 .article-body h3 {
@@ -307,6 +308,71 @@ html.dark .glass-panel {
   font-weight: 700;
   color: var(--fg);
   margin-top: 2rem;
+  scroll-margin-top: 6rem;
+}
+
+.legal-toc {
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  border-radius: 1.25rem;
+  padding: 1.25rem 1.4rem;
+}
+
+.article-body .legal-toc ol {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  columns: 1;
+}
+
+@media (min-width: 640px) {
+  .legal-toc ol {
+    columns: 2;
+    column-gap: 1.5rem;
+  }
+}
+
+.legal-toc li {
+  break-inside: avoid;
+  margin: 0 0 0.45rem;
+}
+
+.legal-toc a {
+  font-weight: 500;
+}
+
+.blog-toc {
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  border-radius: 1.25rem;
+  padding: 1.15rem 1.2rem 1.25rem;
+}
+
+.blog-toc ol {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+}
+
+.blog-toc li + li {
+  margin-top: 0.4rem;
+}
+
+.blog-toc .toc-h3 {
+  padding-left: 0.85rem;
+}
+
+.blog-toc a {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--fg-muted);
+}
+
+.blog-toc a:hover,
+.blog-toc a:focus-visible {
+  color: var(--color-violet);
 }
 
 .article-body a {

@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import AnimateIn from '@/components/AnimateIn';
 import BookDemoButton from '@/components/BookDemoButton';
 import { APP_GET_STARTED } from '@/lib/site';
@@ -19,9 +18,9 @@ export default function CtaSection({
         <AnimateIn delay={160}>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <BookDemoButton />
-            <Link href={APP_GET_STARTED} className="btn-secondary">
+            <a href={APP_GET_STARTED} className="btn-secondary">
               Start building free
-            </Link>
+            </a>
           </div>
         </AnimateIn>
       </div>

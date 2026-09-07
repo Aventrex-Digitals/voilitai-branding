@@ -3,7 +3,7 @@
 > Fast Voice OS agents that feel human. A reliable Vapi and Retell alternative for 24/7 answering, booking, qualification, CRM updates, and customer support.
 
 - Site: https://voilitai.aventrexdigital.com
-- Product app: https://voiceos.aventrexdigital.com
+- Product app: https://app.voilitai.com/
 - Contact: contact@voilitai.com
 - Pricing: https://voilitai.aventrexdigital.com/pricing/
 

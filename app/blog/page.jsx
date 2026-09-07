@@ -26,7 +26,7 @@ export default async function BlogPage() {
         title="Clear writing on voice AI — not another hype roundup"
         lead="Guides for operators who have to put a number in production: ROI, compliance, conversation design, and what to automate first."
       />
-      <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+      <section className="mx-auto w-full max-w-[90rem] px-4 pb-20 sm:px-6 lg:px-8">
         {posts.length === 0 ? (
           <div className="mx-auto max-w-lg py-10 text-center">
             <p className="text-lg text-[var(--fg-muted)]">No articles published yet.</p>
@@ -35,15 +35,15 @@ export default async function BlogPage() {
             </p>
           </div>
         ) : (
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {posts.map((post) => (
               <article key={post.slug} className="premium-card flex flex-col overflow-hidden">
                 {post.image ? (
-                  <Link href={`/blog/${post.slug}/`} className="block overflow-hidden">
+                  <Link href={`/blog/${post.slug}/`} className="block bg-[var(--bg)]">
                     <img
                       src={post.image}
                       alt={post.title}
-                      className="aspect-[16/9] w-full object-cover"
+                      className="block h-auto w-full object-contain"
                     />
                   </Link>
                 ) : null}

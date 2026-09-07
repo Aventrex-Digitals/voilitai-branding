@@ -58,18 +58,18 @@ export default function Header() {
           >
             <Icon name={theme === 'dark' ? 'sun' : 'moon'} className="h-5 w-5" />
           </button>
-          <Link
+          <a
             href={APP_SIGN_IN}
             className="rounded-full px-3.5 py-2 text-sm font-medium text-[var(--fg-muted)] transition hover:text-[var(--fg)]"
           >
             Sign in
-          </Link>
-          <Link
+          </a>
+          <a
             href={APP_GET_STARTED}
             className="rounded-full px-3.5 py-2 text-sm font-medium text-[var(--fg-muted)] transition hover:text-[var(--fg)]"
           >
             Get started
-          </Link>
+          </a>
           <BookDemoButton className="btn-primary px-4 py-2 text-sm" />
         </div>
 
@@ -109,12 +109,18 @@ export default function Header() {
             </Link>
           ))}
           <BookDemoButton className="btn-primary mt-2 w-full py-3 text-center text-base" />
-          <Link
-            href={APP_GET_STARTED}
+          <a
+            href={APP_SIGN_IN}
             className="mt-2 block rounded-full py-3 text-center text-base font-medium text-[var(--fg-muted)]"
           >
+            Sign in
+          </a>
+          <a
+            href={APP_GET_STARTED}
+            className="block rounded-full py-3 text-center text-base font-medium text-[var(--fg-muted)]"
+          >
             Get started
-          </Link>
+          </a>
         </nav>
       )}
     </header>
