@@ -28,6 +28,10 @@ const outfit = Outfit({
   display: 'swap',
 });
 
+// Keep HTML documents on a short TTL so Hostinger/hCDN cannot pin an old
+// prerender (and its CSS hashes) for a year after the next deploy.
+export const revalidate = 60;
+
 export const viewport = {
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#f6f7fb' },

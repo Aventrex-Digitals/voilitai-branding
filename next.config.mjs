@@ -20,6 +20,19 @@ const nextConfig = {
   turbopack: {
     root: __dirname,
   },
+  async headers() {
+    return [
+      {
+        source: '/((?!_next/static|_next/image).*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=60, stale-while-revalidate=300',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
