@@ -20,7 +20,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Production URL
 
-Set `SITE_URL` in `lib/site.js` before launch (default `https://voilitai.aventrexdigital.com`). Sign in and Get started go to `https://app.voilitai.com/`.
+The production site is [https://voilitai.com](https://voilitai.com). Sign in and Get started go to [https://app.voilitai.com/](https://app.voilitai.com/). Contact is `contact@voilitai.com`.
 
 ## Blog
 

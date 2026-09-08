@@ -73,6 +73,18 @@ body {
   top: 1rem;
 }
 
+.wordmark-i {
+  font-style: normal;
+}
+
+.wordmark-i-violet {
+  color: #c44dff;
+}
+
+.wordmark-i-cyan {
+  color: #00c2d7;
+}
+
 .accent-text,
 :root .text-cyan,
 :root .text-cyan-deep {
