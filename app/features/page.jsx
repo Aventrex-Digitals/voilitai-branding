@@ -21,7 +21,7 @@ export default function FeaturesPage() {
       <PageHero
         crumbs={CRUMBS}
         eyebrow="Platform"
-        title="Everything required to run voice AI in production"
+        title="Everything required to run voice AI in production — and grow into more channels"
         lead="Human-standard voice, a visual builder, live tools, telephony, and QA — so you are not stitching five vendors into a demo that dies on the first real call."
       />
 
@@ -54,10 +54,20 @@ export default function FeaturesPage() {
 
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <h2 className="font-display text-2xl font-bold sm:text-3xl">Channels and telephony</h2>
+        <p className="mt-2 max-w-2xl text-[var(--fg-muted)]">
+          Voice and the API are live. Chat and SMS are on the platform roadmap.
+        </p>
         <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {[...OMNI_CHANNELS, ...TELEPHONY].map((item) => (
             <article key={item.title} className="premium-card p-5">
-              <h3 className="font-semibold">{item.title}</h3>
+              <div className="flex items-start justify-between gap-3">
+                <h3 className="font-semibold">{item.title}</h3>
+                {item.status ? (
+                  <span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-[var(--fg-muted)]">
+                    {item.status === 'live' ? 'Live' : 'Soon'}
+                  </span>
+                ) : null}
+              </div>
               <p className="mt-2 text-sm text-[var(--fg-muted)]">{item.description}</p>
             </article>
           ))}

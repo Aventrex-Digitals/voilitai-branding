@@ -144,6 +144,15 @@ const ICONS = {
   close: (
     <path d="M6 6l12 12M18 6 6 18" />
   ),
+  chevron: (
+    <path d="M6 9l6 6 6-6" />
+  ),
+  layers: (
+    <>
+      <path d="M12 3 3 8l9 5 9-5-9-5Z" />
+      <path d="M3 12l9 5 9-5M3 16l9 5 9-5" />
+    </>
+  ),
 };
 
 export default function Icon({ name, className = 'h-5 w-5' }) {

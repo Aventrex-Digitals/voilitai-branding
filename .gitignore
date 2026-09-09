@@ -1,6 +1,7 @@
 node_modules/
 .next/
 out/
+public/next-fallback.css
 .env*.local
 .env.production
 *.tsbuildinfo
