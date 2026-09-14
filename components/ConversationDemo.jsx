@@ -30,7 +30,7 @@ export default function ConversationDemo() {
           On call
         </span>
       </div>
-      <div className="space-y-3 px-5 py-5">
+      <div className="h-[22rem] space-y-3 overflow-hidden px-5 py-5">
         {DEMO_MESSAGES.slice(0, visible).map((message, index) => (
           <div
             key={index}
@@ -47,9 +47,14 @@ export default function ConversationDemo() {
             </p>
           </div>
         ))}
-        {visible < DEMO_MESSAGES.length && (
-          <p className="text-xs text-[var(--fg-muted)]">Agent responding…</p>
-        )}
+        <p
+          className={`text-xs text-[var(--fg-muted)] transition-opacity ${
+            visible < DEMO_MESSAGES.length ? 'opacity-100' : 'opacity-0'
+          }`}
+          aria-hidden={visible >= DEMO_MESSAGES.length}
+        >
+          Agent responding…
+        </p>
       </div>
       <div className="grid grid-cols-3 gap-px border-t border-[var(--border)] bg-[var(--border)] text-center text-xs">
         {['Appointment booked', 'CRM updated', 'Text sent'].map((label) => (

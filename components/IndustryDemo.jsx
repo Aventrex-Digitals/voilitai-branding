@@ -58,7 +58,8 @@ export default function IndustryDemo({ demos = VOICE_DEMOS }) {
         </span>
       </div>
 
-      <div className="min-h-[16.5rem] space-y-3 px-5 pb-5">
+      {/* Fixed height so cycling messages don't resize the hero / page. */}
+      <div className="h-[26rem] space-y-3 overflow-hidden px-5 pb-5">
         {demo.messages.slice(0, visible).map((message, index) => (
           <div
             key={`${demo.id}-${index}`}
@@ -75,9 +76,14 @@ export default function IndustryDemo({ demos = VOICE_DEMOS }) {
             </p>
           </div>
         ))}
-        {visible < demo.messages.length && (
-          <p className="text-xs text-[var(--fg-muted)]">Agent responding…</p>
-        )}
+        <p
+          className={`text-xs text-[var(--fg-muted)] transition-opacity ${
+            visible < demo.messages.length ? 'opacity-100' : 'opacity-0'
+          }`}
+          aria-hidden={visible >= demo.messages.length}
+        >
+          Agent responding…
+        </p>
       </div>
 
       <div className="grid grid-cols-3 gap-px border-t border-[var(--border)] bg-[var(--border)] text-center text-xs">
