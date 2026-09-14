@@ -98,6 +98,9 @@ export const metadata = {
     title: SITE_NAME,
     statusBarStyle: 'default',
   },
+  verification: {
+    google: 'mEP4wHeDFDwDau19l-iI79UYVQ-txsQ0Zk4-Z8dXjFY',
+  },
 };
 
 export default function RootLayout({ children }) {
