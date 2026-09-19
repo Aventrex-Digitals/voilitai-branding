@@ -3,8 +3,8 @@ import BookDemoButton from '@/components/BookDemoButton';
 import { APP_GET_STARTED } from '@/lib/site';
 
 export default function CtaSection({
-  title = 'Ready to put a human-sounding agent on the phone?',
-  text = 'Book a demo and we’ll contact you within 24 hours. Or start building free the same day.',
+  title = 'Create your own AI voice employee',
+  text = 'Build, customize, and deploy an AI employee for your business — without developers. Or talk to a live demo first.',
 }) {
   return (
     <section className="relative overflow-hidden">
@@ -17,10 +17,10 @@ export default function CtaSection({
         </AnimateIn>
         <AnimateIn delay={160}>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <BookDemoButton />
-            <a href={APP_GET_STARTED} className="btn-secondary">
-              Start building free
+            <a href={APP_GET_STARTED} className="btn-primary">
+              Create Your AI Employee
             </a>
+            <BookDemoButton className="btn-secondary">Talk to a Live Demo</BookDemoButton>
           </div>
         </AnimateIn>
       </div>

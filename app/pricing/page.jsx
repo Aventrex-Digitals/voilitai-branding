@@ -31,8 +31,8 @@ export default async function PricingPage() {
       <PageHero
         crumbs={CRUMBS}
         eyebrow="Pricing"
-        title="Production voice AI without a surprise invoice"
-        lead="Start free on the builder, trial Growth for 14 days, or talk to sales about unlimited agents, HIPAA-ready controls, and a dedicated partner."
+        title="Create AI voice employees without surprise invoices"
+        lead="Pay for the agents and minutes you need to create and operate AI voice employees. Start in the builder, trial Growth for 14 days, or talk through Enterprise with sales."
       />
       <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
         <PricingCards plans={plans} />

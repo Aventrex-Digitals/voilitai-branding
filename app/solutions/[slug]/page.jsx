@@ -8,6 +8,7 @@ import BookDemoButton from '@/components/BookDemoButton';
 import { breadcrumbJsonLd, serviceJsonLd } from '@/lib/schema';
 import { SOLUTIONS, getSolution } from '@/lib/solutions';
 import { solutionMetadata } from '@/lib/seo';
+import { APP_GET_STARTED } from '@/lib/site';
 
 export function generateStaticParams() {
   return SOLUTIONS.map((solution) => ({ slug: solution.slug }));
@@ -71,7 +72,10 @@ export default async function SolutionPage({ params }) {
               <li key={item}>{item}</li>
             ))}
           </ul>
-          <BookDemoButton className="btn-primary mt-6 w-full">Talk through this use case</BookDemoButton>
+          <BookDemoButton className="btn-secondary mt-6 w-full">Talk to a Live Demo</BookDemoButton>
+          <Link href={APP_GET_STARTED} className="btn-primary mt-3 flex w-full items-center justify-center">
+            Create Your AI Employee
+          </Link>
         </aside>
       </section>
       <CtaSection />

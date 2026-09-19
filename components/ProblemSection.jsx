@@ -113,18 +113,18 @@ function OverflowCalls() {
 
 const PROBLEMS = [
   {
-    title: 'Missed Calls Mean Lost Revenue',
-    text: "When customers can't get through, they abandon purchases, switch to competitors, and rarely try again — directly impacting your bottom line.",
+    title: 'Every missed call could be a missed customer',
+    text: 'When customers cannot get through, they book with whoever answers. Voicemail rarely wins the job.',
     Visual: MissedCallFlow,
   },
   {
-    title: 'Long Wait Times Damage Customer Trust',
-    text: 'Customers expect instant responses. Being put on hold creates frustration, lowers satisfaction, and increases repeat follow-ups.',
+    title: 'Hold time pushes buyers away',
+    text: 'Customers expect a fast answer. Long waits create frustration and send high-intent callers elsewhere.',
     Visual: HoldScreen,
   },
   {
-    title: "Support Teams Don't Scale With Demand",
-    text: 'As call volume grows, teams struggle to keep up. Hiring and training new agents takes weeks, while demand increases overnight.',
+    title: 'Your team cannot answer every line at once',
+    text: 'As call volume grows, hiring lags behind. An AI employee covers overflow while your people stay focused on the work.',
     Visual: OverflowCalls,
   },
 ];
@@ -135,9 +135,13 @@ export default function ProblemSection() {
       <AnimateIn className="max-w-3xl">
         <p className="section-eyebrow">The Problem</p>
         <h2 className="font-display mt-4 text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem] lg:leading-[1.12]">
-          Enterprise sales teams lose{' '}
-          <span className="accent-text">40%</span> of leads before proposal
+          Missed calls are missed revenue —{' '}
+          <span className="accent-text">especially after hours</span>
         </h2>
+        <p className="mt-4 max-w-2xl text-[var(--fg-muted)]">
+          When your team is busy or unavailable, VoilitAI can answer the call, have a conversation
+          with the customer and take the next step.
+        </p>
       </AnimateIn>
 
       <div className="mt-12 grid gap-5 lg:grid-cols-3">

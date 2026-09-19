@@ -20,8 +20,8 @@ export default function ContactPage() {
       <PageHero
         crumbs={CRUMBS}
         eyebrow="Contact"
-        title="Tell us the job. We’ll tell you how the agent should work."
-        lead="Book a demo — share call volume and the workflow that hurts most. We’ll contact you within 24 hours."
+        title="Talk to a live demo — or create your AI employee"
+        lead="Share your call volume and the workflow that hurts most. We’ll contact you within 24 hours. Prefer to start now? Create your AI employee in the app."
       />
       <section className="mx-auto grid max-w-7xl gap-10 px-4 pb-20 sm:px-6 lg:grid-cols-2 lg:px-8">
         <ContactForm />
@@ -34,16 +34,16 @@ export default function ContactPage() {
             </a>
           </p>
           <p className="mt-4 text-sm text-[var(--fg-muted)]">
-            Prefer to click around first?{' '}
+            Ready to build?{' '}
             <a className="font-medium text-violet" href={APP_GET_STARTED}>
-              Start building free
+              Create Your AI Employee
             </a>
             .
           </p>
           <ul className="mt-8 space-y-3 text-sm text-[var(--fg-muted)]">
+            <li>Create agents in the dashboard — no developer required</li>
+            <li>Connect phone numbers and business tools</li>
             <li>Starter and Growth self-serve in the product</li>
-            <li>Enterprise security reviews welcome</li>
-            <li>SIP and existing-number migrations supported</li>
           </ul>
         </div>
       </section>

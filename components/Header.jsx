@@ -68,9 +68,9 @@ export default function Header() {
             href={APP_GET_STARTED}
             className="rounded-full px-3.5 py-2 text-sm font-medium text-[var(--fg-muted)] transition hover:text-[var(--fg)]"
           >
-            Get started
+            Create Your AI Employee
           </a>
-          <BookDemoButton className="btn-primary px-4 py-2 text-sm" />
+          <BookDemoButton className="btn-primary px-4 py-2 text-sm">Talk to a Live Demo</BookDemoButton>
         </div>
 
         <div className="flex items-center gap-1 lg:hidden">
@@ -108,7 +108,9 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <BookDemoButton className="btn-primary mt-2 w-full py-3 text-center text-base" />
+          <BookDemoButton className="btn-primary mt-2 w-full py-3 text-center text-base">
+            Talk to a Live Demo
+          </BookDemoButton>
           <a
             href={APP_SIGN_IN}
             className="mt-2 block rounded-full py-3 text-center text-base font-medium text-[var(--fg-muted)]"
@@ -119,7 +121,7 @@ export default function Header() {
             href={APP_GET_STARTED}
             className="block rounded-full py-3 text-center text-base font-medium text-[var(--fg-muted)]"
           >
-            Get started
+            Create Your AI Employee
           </a>
         </nav>
       )}

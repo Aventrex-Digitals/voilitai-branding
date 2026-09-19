@@ -40,13 +40,14 @@ export default function DemoModal() {
         <div className="flex items-start justify-between gap-4">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-violet-deep">
-              Book a demo
+              Talk to a live demo
             </p>
             <h2 id="demo-dialog-title" className="font-display mt-1 text-2xl font-bold">
-              See VoilitAI on a real call
+              Don&apos;t just read about it. Experience VoilitAI.
             </h2>
             <p className="mt-2 text-sm leading-relaxed text-[var(--fg-muted)]">
-              Submit this form and we’ll contact you within 24 hours to schedule a walkthrough.
+              Submit this form and we&apos;ll contact you within 24 hours to walk through a real AI
+              voice employee for your business.
             </p>
           </div>
           <button

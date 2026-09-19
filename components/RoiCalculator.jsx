@@ -60,10 +60,10 @@ export default function RoiCalculator() {
             in work that went to whoever answered.
           </p>
           <p className="mt-5 text-sm text-[var(--fg-muted)]">
-            A VoilitAI Starter agent that answers all of them starts at $49/month.
+            A VoilitAI AI voice employee that answers those calls starts on Starter.
           </p>
           <Link href="/pricing/" className="btn-primary mt-6">
-            See pricing
+            Create Your AI Employee
           </Link>
         </div>
       </div>

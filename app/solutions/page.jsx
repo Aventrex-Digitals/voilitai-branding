@@ -22,8 +22,8 @@ export default function SolutionsPage() {
       <PageHero
         crumbs={CRUMBS}
         eyebrow="Industries"
-        title="The same human-sounding agent. A different job for every line of business."
-        lead="Start from an industry workflow — booking, intake, FNOL, speed-to-lead — then connect the tools you already run."
+        title="AI receptionists and voice employees for phone-driven businesses"
+        lead="Dental, auto repair, HVAC, plumbing, real estate, clinics, and more — create an AI employee that answers the calls your team cannot."
       />
       <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
         <div className="grid gap-5 md:grid-cols-2">

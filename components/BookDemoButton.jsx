@@ -4,7 +4,7 @@ import { useDemo } from '@/components/DemoProvider';
 
 export default function BookDemoButton({
   className = 'btn-primary',
-  children = 'Book a demo',
+  children = 'Talk to a Live Demo',
 }) {
   const { openDemo } = useDemo();
 

@@ -19,7 +19,7 @@ import { PAGE_META } from '@/lib/seo';
 import { PLATFORM_PILLS } from '@/lib/products';
 import {
   STATS,
-  CASE_STUDIES,
+  USE_CASES,
   SECURITY_BADGES,
   INTEGRATIONS,
   HOW_IT_WORKS,
@@ -53,20 +53,24 @@ export default async function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-12 sm:px-6 lg:px-8 lg:pb-24 lg:pt-20">
           <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-16">
             <div>
-              <p className="section-eyebrow animate-on-load">The VoilitAI platform</p>
+              <p className="section-eyebrow animate-on-load">AI voice employees</p>
               <h1 className="font-display animate-on-load animate-on-load-delay-1 mt-6 text-4xl font-bold tracking-tight sm:text-5xl lg:text-[3.85rem] lg:leading-[1.05]">
-                Start with voice.
-                <span className="mt-2 block">Grow into every conversation.</span>
+                Create Your Own
+                <span className="mt-2 block">AI Voice Employee</span>
               </h1>
               <p className="animate-on-load animate-on-load-delay-2 mt-6 max-w-xl text-lg leading-relaxed text-[var(--fg-muted)]">
-                Production voice agents that answer, book, and update your CRM — with sub-600ms
-                replies. Chat, SMS, and website voice share the same agent brain when they ship.
+                Build, customize and deploy an AI voice employee for your business — without
+                developers.
+              </p>
+              <p className="animate-on-load animate-on-load-delay-2 mt-4 max-w-xl text-base leading-relaxed text-[var(--fg-muted)]">
+                Handle calls, answer customer questions, qualify leads, schedule appointments and
+                automate conversations with an AI employee you create yourself.
               </p>
               <div className="animate-on-load animate-on-load-delay-3 mt-9 flex flex-wrap gap-3">
-                <BookDemoButton />
-                <a href={APP_GET_STARTED} className="btn-secondary">
-                  Start building free
+                <a href={APP_GET_STARTED} className="btn-primary">
+                  Create Your AI Employee
                 </a>
+                <BookDemoButton className="btn-secondary">Talk to a Live Demo</BookDemoButton>
               </div>
               <ul className="animate-on-load animate-on-load-delay-4 mt-8 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[var(--fg-muted)]">
                 {PLATFORM_PILLS.map((item) => (
@@ -95,7 +99,7 @@ export default async function HomePage() {
 
       <section className="border-y border-[var(--border)] py-8" aria-label="Integrations">
         <p className="mb-5 text-center text-xs font-semibold uppercase tracking-[0.2em] text-[var(--fg-muted)]">
-          Plugs into the stack you already run
+          Connect the tools your business already runs
         </p>
         <Marquee items={INTEGRATIONS} />
       </section>
@@ -106,11 +110,11 @@ export default async function HomePage() {
         <AnimateIn className="max-w-2xl">
           <p className="section-eyebrow">Platform</p>
           <h2 className="font-display mt-4 text-3xl font-bold sm:text-4xl">
-            Voice is live. The rest of the suite is designed in.
+            Your AI employee. Your rules.
           </h2>
           <p className="mt-4 text-[var(--fg-muted)]">
-            One builder, knowledge base, and analytics layer. Add channels without standing up a
-            second bot — or a second vendor.
+            You shouldn&apos;t need a developer to create an AI employee. Build it once, connect
+            your phone and tools, then grow into more channels as they ship.
           </p>
         </AnimateIn>
         <div className="mt-10">
@@ -120,13 +124,13 @@ export default async function HomePage() {
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <AnimateIn className="max-w-2xl">
-          <p className="section-eyebrow">Voice agents</p>
+          <p className="section-eyebrow">On the call</p>
           <h2 className="font-display mt-4 text-3xl font-bold sm:text-4xl">
-            What the agent actually does on the call
+            What your AI employee actually does
           </h2>
           <p className="mt-4 text-[var(--fg-muted)]">
-            Not a phone tree. A production agent that listens, acts, and knows when a human should
-            take over.
+            Answer calls automatically. Qualify leads. Help book appointments. Hand off to a human
+            when judgment is needed.
           </p>
         </AnimateIn>
         <AnimateIn delay={80} className="mt-10">
@@ -136,13 +140,13 @@ export default async function HomePage() {
 
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <AnimateIn className="mx-auto max-w-2xl text-center">
-          <p className="section-eyebrow">Hidden cost</p>
+          <p className="section-eyebrow">Missed calls</p>
           <h2 className="font-display mt-4 text-3xl font-bold sm:text-4xl">
-            Every unanswered call is revenue you will never see
+            Every missed call could be a missed customer
           </h2>
           <p className="mt-4 text-[var(--fg-muted)]">
-            The phone is still the highest-intent channel you have. VoilitAI answers it in seconds —
-            then books, qualifies, or hands off.
+            When your team is busy or unavailable, VoilitAI can answer the call, have a conversation
+            with the customer and take the next step.
           </p>
         </AnimateIn>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -162,7 +166,7 @@ export default async function HomePage() {
         <AnimateIn className="mx-auto max-w-2xl text-center">
           <p className="section-eyebrow">Why VoilitAI</p>
           <h2 className="font-display mt-4 text-3xl font-bold sm:text-4xl">
-            Next-gen voice AI, not another phone tree
+            Create your own AI employee — don&apos;t rent a phone tree
           </h2>
         </AnimateIn>
         <AnimateIn delay={80} className="mt-10">
@@ -173,9 +177,14 @@ export default async function HomePage() {
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <AnimateIn className="mx-auto max-w-2xl text-center">
           <p className="section-eyebrow">How it works</p>
-          <h2 className="font-display mt-4 text-3xl font-bold sm:text-4xl">Live in weeks, not a six-month IT project</h2>
+          <h2 className="font-display mt-4 text-3xl font-bold sm:text-4xl">
+            Create. Customize. Connect. Deploy.
+          </h2>
+          <p className="mt-4 text-[var(--fg-muted)]">
+            Four clear steps to put an AI voice employee on your phone lines — without a developer.
+          </p>
         </AnimateIn>
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {HOW_IT_WORKS.map((step, i) => (
             <AnimateIn key={step.step} delay={i * 80} className="premium-card p-7">
               <p className="font-display text-sm font-bold text-violet">{step.step}</p>
@@ -187,28 +196,25 @@ export default async function HomePage() {
         </div>
         <div className="mt-8 text-center">
           <Link href="/how-it-works/" className="text-sm font-semibold text-violet hover:text-violet-deep">
-            Full rollout process →
+            See the full process →
           </Link>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <AnimateIn className="mx-auto max-w-2xl text-center">
-          <p className="section-eyebrow">Solutions</p>
+          <p className="section-eyebrow">Use cases</p>
           <h2 className="font-display mt-4 text-3xl font-bold sm:text-4xl">
-            Voice agents for the industries that live on the phone
+            AI employees for real business work
           </h2>
         </AnimateIn>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {SOLUTIONS.map((solution, i) => (
-            <AnimateIn key={solution.slug} delay={i * 50}>
-              <Link href={`/solutions/${solution.slug}/`} className="premium-card block h-full p-6">
-                <p className="text-xs uppercase tracking-[0.16em] text-[var(--fg-muted)]">{solution.eyebrow}</p>
-                <h3 className="mt-3 text-lg font-semibold">{solution.name}</h3>
-                <p className="mt-2 text-sm text-[var(--fg-muted)]">
-                  {solution.metric} {solution.metricLabel}
-                </p>
-              </Link>
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {USE_CASES.map((item, i) => (
+            <AnimateIn key={item.title} delay={i * 50} className="premium-card p-7">
+              <p className="font-display text-3xl font-bold accent-text">{item.highlight}</p>
+              <p className="mt-1 text-sm text-[var(--fg-muted)]">{item.highlightLabel}</p>
+              <h3 className="mt-5 text-lg font-semibold">{item.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-[var(--fg-muted)]">{item.description}</p>
             </AnimateIn>
           ))}
         </div>
@@ -216,21 +222,22 @@ export default async function HomePage() {
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <AnimateIn className="mx-auto max-w-2xl text-center">
-          <p className="section-eyebrow">Results</p>
-          <h2 className="font-display mt-4 text-3xl font-bold sm:text-4xl">Proven impact on the metrics that matter</h2>
+          <p className="section-eyebrow">Industries</p>
+          <h2 className="font-display mt-4 text-3xl font-bold sm:text-4xl">
+            Built for businesses that live on the phone
+          </h2>
+          <p className="mt-4 text-[var(--fg-muted)]">
+            Dental practices, auto repair shops, HVAC, plumbing, real estate, clinics, and more.
+          </p>
         </AnimateIn>
-        <div className="mt-10 grid gap-5 lg:grid-cols-2">
-          {CASE_STUDIES.map((study, i) => (
-            <AnimateIn key={study.company} delay={i * 70} className="premium-card p-7">
-              <p className="font-display text-4xl font-bold accent-text">{study.metric}</p>
-              <p className="mt-1 text-sm text-[var(--fg-muted)]">{study.metricLabel}</p>
-              <blockquote className="mt-5 text-[var(--fg)]">“{study.quote}”</blockquote>
-              <p className="mt-4 text-sm font-medium">
-                {study.author}
-                <span className="block text-[var(--fg-muted)]">
-                  {study.role}, {study.company}
-                </span>
-              </p>
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {SOLUTIONS.map((solution, i) => (
+            <AnimateIn key={solution.slug} delay={i * 50}>
+              <Link href={`/solutions/${solution.slug}/`} className="premium-card block h-full p-6">
+                <p className="text-xs uppercase tracking-[0.16em] text-[var(--fg-muted)]">{solution.eyebrow}</p>
+                <h3 className="mt-3 text-lg font-semibold">{solution.name}</h3>
+                <p className="mt-2 text-sm text-[var(--fg-muted)] line-clamp-3">{solution.description}</p>
+              </Link>
             </AnimateIn>
           ))}
         </div>
@@ -240,7 +247,7 @@ export default async function HomePage() {
         <AnimateIn className="mx-auto max-w-2xl text-center">
           <p className="section-eyebrow">Security</p>
           <h2 className="font-display mt-4 text-3xl font-bold sm:text-4xl">
-            Built for healthcare, finance, and teams that cannot guess
+            Built for businesses that cannot guess with customer calls
           </h2>
         </AnimateIn>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -262,7 +269,12 @@ export default async function HomePage() {
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <AnimateIn className="mx-auto max-w-2xl text-center">
           <p className="section-eyebrow">Pricing</p>
-          <h2 className="font-display mt-4 text-3xl font-bold sm:text-4xl">Simple plans. Production-ready from day one.</h2>
+          <h2 className="font-display mt-4 text-3xl font-bold sm:text-4xl">
+            Pay to create and operate AI voice employees
+          </h2>
+          <p className="mt-4 text-[var(--fg-muted)]">
+            Plans cover the agents and minutes you need to put AI employees on your phone lines.
+          </p>
         </AnimateIn>
         <div className="mt-12">
           <PricingCards plans={plans} />
@@ -285,8 +297,8 @@ export default async function HomePage() {
       </section>
 
       <CtaSection
-        title="Start with a voice agent. Add the rest as you grow."
-        text="Book a demo and we’ll contact you within 24 hours. Or start building a production voice agent free the same day."
+        title="Don't just read about it. Create one."
+        text="Create your AI voice employee in the dashboard — or talk to a live demo and hear what callers experience."
       />
     </>
   );

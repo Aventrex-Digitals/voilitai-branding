@@ -1,6 +1,6 @@
 # VoilitAI
 
-> Fast Voice OS agents that feel human. A reliable Vapi and Retell alternative for 24/7 answering, booking, qualification, CRM updates, and customer support.
+> Create your own AI voice employee — without developers. Build, customize, and deploy a voice agent that answers calls, qualifies leads, and helps schedule work for your business.
 
 - Site: https://voilitai.com
 - Product app: https://app.voilitai.com/
@@ -9,17 +9,25 @@
 
 ## Product
 
-VoilitAI is a voice AI platform and Vapi / Retell alternative: visual flow builder, sub-600ms replies, real-time tools (calendar, CRM, payments, transfer), omni-channel voice/chat/SMS, SIP trunking, simulation QA, and SOC 2 / HIPAA-ready controls. Best for fast Voice OS agents and reliable 24/7 customer support.
+VoilitAI lets businesses create their own AI voice employees. No developer required for the core workflow: create an agent in the dashboard, customize what it knows and does, connect phone numbers and business tools, then deploy.
 
-Plans: Starter $49/month, Growth $199/month (14-day trial), Enterprise custom.
+Voice is available now. Chat, SMS, and website voice are on the roadmap and will use the same agent brain.
 
-## For people
+## For business owners
 
-Never miss a call. Agents answer in seconds, sound natural, and hand off with context when a human should take over.
+- Answer calls automatically
+- Recover missed calls
+- Qualify leads
+- Help schedule appointments through connected tools
+- Hand off to a human with context
 
-## For agents and crawlers
+## Primary CTAs
 
-Key URLs:
+- Create Your AI Employee → https://app.voilitai.com/
+- Talk to a Live Demo → https://voilitai.com/contact/
+
+## Key URLs
+
 - https://voilitai.com/
 - https://voilitai.com/features/
 - https://voilitai.com/solutions/
@@ -27,24 +35,17 @@ Key URLs:
 - https://voilitai.com/pricing/
 - https://voilitai.com/faq/
 - https://voilitai.com/blog/
-- https://voilitai.com/blog/vapi-retell-alternative/
 
-Comparisons / keywords:
-- Alternative to Vapi
-- Alternative to Retell / Retell AI
-- Best and fastest Voice OS agents
-- Most reliable AI customer support
-- https://voilitai.com/trust/
-- https://voilitai.com/contact/
+## Industries
 
-Industry solutions:
-- https://voilitai.com/solutions/healthcare/
+- https://voilitai.com/solutions/healthcare/ (dental & clinics)
+- https://voilitai.com/solutions/auto-repair/
+- https://voilitai.com/solutions/home-services/ (HVAC, plumbing)
+- https://voilitai.com/solutions/real-estate/
+- https://voilitai.com/solutions/lead-qualification/
+- https://voilitai.com/solutions/customer-support/
 - https://voilitai.com/solutions/financial-services/
 - https://voilitai.com/solutions/insurance/
-- https://voilitai.com/solutions/customer-support/
-- https://voilitai.com/solutions/lead-qualification/
-- https://voilitai.com/solutions/home-services/
-- https://voilitai.com/solutions/real-estate/
 - https://voilitai.com/solutions/legal/
 
 Sitemap: https://voilitai.com/sitemap.xml

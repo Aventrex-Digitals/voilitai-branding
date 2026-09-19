@@ -20,27 +20,27 @@ export default function AboutPage() {
       <PageHero
         crumbs={CRUMBS}
         eyebrow="Company"
-        title={`${SITE_NAME} exists so the most important channel you have never goes unanswered`}
-        lead="We build production voice AI — not demo theater. The product is designed for operators who need bookings, CRM notes, and a human handoff, not a novelty greeting."
+        title={`${SITE_NAME} helps businesses create their own AI voice employees`}
+        lead="We build software for operators who need calls answered, leads qualified, and appointments handled — without waiting on a developer to ship a custom bot."
       />
       <article className="mx-auto max-w-3xl px-4 pb-16 text-lg leading-relaxed text-[var(--fg-muted)] sm:px-6 lg:px-8">
         <p>
-          VoilitAI is the branded voice AI platform from Aventrex Digital. The engine behind it is
-          the same production stack teams already use to design agents, connect telephony, and
-          watch live conversations — now with a name and visual system that matches the product:
-          fluid, precise, and built around voice.
+          VoilitAI is the branded AI voice platform from Aventrex Digital. The product lets you
+          create, customize, and deploy an AI voice employee for your business — then connect your
+          phone lines and tools so it can do real work on the call.
         </p>
         <h2 className="font-display mt-10 text-2xl font-bold text-[var(--fg)]">What we believe</h2>
         <p className="mt-4">
-          Latency is the product. If the agent pauses, callers hang up. Tools are the product. If
-          it cannot book, qualify, or transfer, it is a talking FAQ. Security is the product. If
-          you handle health or money, a pretty voice without access control is a liability.
+          You shouldn&apos;t need a developer to create an AI employee. Latency matters — if the
+          agent pauses, callers hang up. Actions matter — if it cannot help book, qualify, or
+          transfer, it is just a talking FAQ. Control matters — your AI employee should follow your
+          rules.
         </p>
         <h2 className="font-display mt-10 text-2xl font-bold text-[var(--fg)]">How we work</h2>
         <p className="mt-4">
-          Simple agents launch from templates in hours. Complex deployments get a partner who will
-          sit in the flow builder, the SIP plan, and the QA queue with you. We would rather ship
-          one workflow that books jobs than ten personas that only demo well.
+          Most teams create a first agent in the dashboard the same day. Complex deployments get a
+          partner who will sit in the builder, telephony plan, and go-live with you. We would rather
+          ship one workflow that books jobs than ten personas that only demo well.
         </p>
       </article>
       <CtaSection />

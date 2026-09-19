@@ -15,16 +15,20 @@ export const metadata = PAGE_META.howItWorks;
 
 const DETAIL = [
   {
-    title: 'Conversation design that operations can own',
-    text: 'The visual flow builder captures greetings, tools, guardrails, and escalation without waiting on an engineering sprint. Developers can still drop to the API when the logic is proprietary.',
+    title: 'Create your AI employee',
+    text: 'Start in the dashboard. Name your agent, pick a voice, and define the greeting. You are creating a real AI employee for your business — not waiting on a custom software project.',
   },
   {
-    title: 'Systems connected before the voice is polished',
-    text: 'Calendars, CRMs, knowledge bases, and payment or dispatch tools are wired as real-time actions. If the agent cannot finish the job on the call, it is not production-ready.',
+    title: 'Customize what it knows and does',
+    text: 'Tell it what your business does, what it should say, and when a human should take over. Your AI employee follows your rules.',
   },
   {
-    title: 'Test the ugly calls first',
-    text: 'Simulation testing runs interruptions, topic changes, and off-script questions. Continuous QA then reviews live calls for failure patterns so week 12 is better than week 1.',
+    title: 'Connect phone lines and tools',
+    text: 'Attach your numbers and the business systems you already use. Integrations let the agent look up information and take action during the call.',
+  },
+  {
+    title: 'Deploy without a developer',
+    text: 'Put your AI employee on inbound or outbound lines, review conversations, and refine prompts over time. Most teams go live the same day.',
   },
 ];
 
@@ -35,13 +39,13 @@ export default function HowItWorksPage() {
       <JsonLd data={howToJsonLd()} />
       <PageHero
         crumbs={CRUMBS}
-        eyebrow="Rollout"
-        title="A production voice agent in three moves"
-        lead="Simple agents go live in hours. Complex enterprise deployments with custom integrations typically take 2–4 weeks with us in the loop."
+        eyebrow="How it works"
+        title="Create your AI voice employee in four steps"
+        lead="Create. Customize. Connect. Deploy. You shouldn’t need a developer to put an AI employee on your phone lines."
       />
 
       <section className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {HOW_IT_WORKS.map((step, i) => (
             <AnimateIn key={step.step} delay={i * 80} className="premium-card p-7">
               <p className="font-display text-sm font-bold text-violet">{step.step}</p>
