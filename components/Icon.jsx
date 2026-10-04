@@ -85,6 +85,12 @@ const ICONS = {
       <path d="M9 7h6M9 11h6M9 15h3" />
     </>
   ),
+  mail: (
+    <>
+      <rect x="3" y="5" width="18" height="14" rx="2" />
+      <path d="m3 7 9 6 9-6" />
+    </>
+  ),
   cable: (
     <path d="M9 3v6a3 3 0 0 0 6 0V3M9 17v4M15 17v4M7 17h10" />
   ),

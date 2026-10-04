@@ -17,17 +17,17 @@ export default function HeroSection() {
         <div className="mx-auto max-w-4xl text-center">
 
           <h1 className="animate-on-load animate-on-load-delay-2 mt-4 font-display text-[clamp(2.5rem,6.5vw,4.75rem)] font-semibold leading-[1.02] tracking-[-0.045em] text-[var(--fg)]">
-              The AI voice agent platform for businesses that can&apos;t miss a call
+            Create an AI agent for your business
           </h1>
 
           <p className="animate-on-load animate-on-load-delay-3 mx-auto mt-6 max-w-2xl text-[clamp(1.05rem,1.5vw,1.2rem)] leading-[1.55] tracking-[-0.01em] text-[var(--fg-muted)]">
-            Create AI voice employees that answer every call, qualify leads, and book appointments
-            live in days, not months.
+            Start with voice today, answer calls, qualify leads, and book appointments. Chat, SMS,
+            and more on the same agent next.
           </p>
 
           <div className="animate-on-load animate-on-load-delay-3 mt-9 flex flex-wrap items-center justify-center gap-3">
             <a href={APP_GET_STARTED} className="btn-primary px-6 py-3.5 text-[0.9rem]">
-              Create Your AI Voice Employee
+              Create Your AI Employee
             </a>
             <a href="/contact/" className="btn-secondary px-6 py-3.5 text-[0.9rem]">
               Hear a Live Demo

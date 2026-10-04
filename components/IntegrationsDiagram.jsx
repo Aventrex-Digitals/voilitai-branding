@@ -10,12 +10,12 @@ const HUB = { x: W / 2, y: H / 2 };
 const RADIUS = 235;
 
 const NODE_DEFS = [
-  { id: 'auto', label: 'Automation', icon: 'bolt', angle: -90 },
-  { id: 'calendar', label: 'Calendar', icon: 'calendar', angle: -30 },
-  { id: 'api', label: 'APIs', icon: 'code', angle: 30 },
-  { id: 'hooks', label: 'Webhooks', icon: 'flow', angle: 90 },
-  { id: 'crm', label: 'CRM', icon: 'crm', angle: 150 },
-  { id: 'phone', label: 'Phone systems', icon: 'phone', angle: 210 },
+  { id: 'calendar', label: 'Google Calendar', icon: 'calendar', angle: -90 },
+  { id: 'crm', label: 'HubSpot', icon: 'crm', angle: -30 },
+  { id: 'slack', label: 'Slack', icon: 'chat', angle: 30 },
+  { id: 'email', label: 'Email', icon: 'mail', angle: 90 },
+  { id: 'sms', label: 'SMS / WhatsApp', icon: 'sms', angle: 150 },
+  { id: 'api', label: 'Custom APIs', icon: 'code', angle: 210 },
 ];
 
 const NODES = NODE_DEFS.map((node) => {
@@ -29,37 +29,37 @@ const NODES = NODE_DEFS.map((node) => {
 
 const LEFT_POINTS = [
   {
-    icon: 'phone',
-    title: 'Keep your numbers',
-    text: 'Connect existing phone lines and routing without rebuilding your call stack.',
+    icon: 'calendar',
+    title: 'Book on Google Calendar',
+    text: 'Check real availability and confirm appointments while the caller is still on the line.',
   },
   {
     icon: 'crm',
-    title: 'Sync your CRM',
-    text: 'Push call outcomes, notes, and lead status back into the tools your team already uses.',
+    title: 'Update HubSpot',
+    text: 'Create or update contacts and push outcomes into CRM without a follow-up form.',
   },
   {
-    icon: 'calendar',
-    title: 'Book into calendars',
-    text: 'Offer real availability and confirm appointments during the conversation.',
+    icon: 'outbound',
+    title: 'Place outbound calls',
+    text: 'Run callbacks and outbound conversations from agents you configure.',
   },
 ];
 
 const RIGHT_POINTS = [
   {
-    icon: 'flow',
-    title: 'Trigger workflows',
-    text: 'Hand off to Zapier, Make, n8n, or webhooks the moment an action is taken.',
+    icon: 'mail',
+    title: 'Email, SMS, WhatsApp',
+    text: 'Send confirmations and follow-ups through Resend and Twilio from the same agent.',
+  },
+  {
+    icon: 'chat',
+    title: 'Notify Slack',
+    text: 'Alert your team the moment a lead qualifies or a call needs a human.',
   },
   {
     icon: 'code',
-    title: 'Open APIs',
-    text: 'Extend VoilitAI with custom endpoints when your process needs more than a plug-in.',
-  },
-  {
-    icon: 'shield',
-    title: 'Secure by default',
-    text: 'Encrypted traffic, controlled access, and audit-friendly conversation records.',
+    title: 'Connect another system',
+    text: 'Wire custom REST APIs for EHR, CRM, or any stack that is not a built-in connector.',
   },
 ];
 
@@ -237,7 +237,7 @@ export default function IntegrationsDiagram() {
             <p className="text-[0.7rem] font-bold uppercase tracking-[0.14em] text-violet">Connect</p>
             <h3 className="mt-2 text-xl font-semibold tracking-tight">Plug into your stack</h3>
             <p className="mt-2 text-sm leading-relaxed text-[var(--fg-muted)]">
-              VoilitAI sits in the middle of the systems you already run: phones, CRM, and calendars.
+              Built-in connectors for calendar, CRM, messaging, and calling — plus custom APIs when you need more.
             </p>
           </div>
           <div className="space-y-5">
@@ -258,7 +258,7 @@ export default function IntegrationsDiagram() {
             <p className="text-[0.7rem] font-bold uppercase tracking-[0.14em] text-violet">Extend</p>
             <h3 className="mt-2 text-xl font-semibold tracking-tight">Automate what happens next</h3>
             <p className="mt-2 text-sm leading-relaxed text-[var(--fg-muted)]">
-              From booking to follow-up, every conversation can trigger the next step in your business.
+              Book appointments, update CRM, send email or SMS, notify Slack, or place a callback — from the call.
             </p>
           </div>
           <div className="space-y-5">
@@ -270,7 +270,7 @@ export default function IntegrationsDiagram() {
       </div>
 
       <p className="integration-caption relative z-[1] border-t border-[var(--border)] px-5 py-4 text-center text-[0.85rem] leading-relaxed text-[var(--fg-muted)] sm:px-8">
-        Twilio, calendars, CRMs, Zapier, Make, n8n, booking tools, and custom APIs. Connect what you already run.
+        Google Calendar, HubSpot, Slack, Resend, Twilio SMS &amp; WhatsApp, outbound calling, and custom APIs.
       </p>
     </div>
   );

@@ -21,6 +21,19 @@ Voice is available now. Chat, SMS, and website voice are on the roadmap and will
 - Help schedule appointments through connected tools
 - Hand off to a human with context
 
+## Built-in connectors
+
+Connect from Integrations → Connect a service in the product:
+
+- Google Calendar (OAuth) — calendar.book
+- HubSpot (OAuth) — hubspot.contact
+- Slack (OAuth) — slack.notify
+- Email · Resend (API key) — email.send
+- SMS · Twilio (credentials) — sms.send
+- WhatsApp · Twilio (credentials)
+- Outbound calls (platform calling) — voice.call
+- Custom APIs — connect another system (EHR, CRM, or any REST API)
+
 ## Primary CTAs
 
 - Create Your AI Employee → https://app.voilitai.com/

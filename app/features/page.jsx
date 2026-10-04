@@ -4,6 +4,7 @@ import AnimateIn from '@/components/AnimateIn';
 import Icon from '@/components/Icon';
 import JsonLd from '@/components/JsonLd';
 import { breadcrumbJsonLd } from '@/lib/schema';
+import ConnectorsGrid from '@/components/ConnectorsGrid';
 import { FEATURE_GROUPS, FEATURE_DETAILS, OMNI_CHANNELS, TELEPHONY } from '@/lib/content';
 import { PAGE_META } from '@/lib/seo';
 
@@ -51,6 +52,15 @@ export default function FeaturesPage() {
           </div>
         </section>
       ))}
+
+      <section id="connectors" className="mx-auto max-w-7xl scroll-mt-28 px-4 py-12 sm:px-6 lg:px-8">
+        <h2 className="font-display text-2xl font-bold sm:text-3xl">Built-in connectors</h2>
+        <p className="mt-2 max-w-2xl text-[var(--fg-muted)]">
+          Connect a service from Integrations in the dashboard. Your AI employee can book, update CRM,
+          message customers, notify your team, or place outbound calls.
+        </p>
+        <ConnectorsGrid showIntro={false} />
+      </section>
 
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <h2 className="font-display text-2xl font-bold sm:text-3xl">Channels and telephony</h2>

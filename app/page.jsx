@@ -4,6 +4,7 @@ import AnimateIn from '@/components/AnimateIn';
 import HowItWorksTimeline from '@/components/HowItWorksTimeline';
 import UseCasesGrid from '@/components/UseCasesGrid';
 import IntegrationsDiagram from '@/components/IntegrationsDiagram';
+import ConnectorsGrid from '@/components/ConnectorsGrid';
 import ProductIntro from '@/components/ProductIntro';
 import ProductDashboard from '@/components/product/ProductDashboard';
 import HeroSection from '@/components/HeroSection';
@@ -106,10 +107,16 @@ export default async function HomePage() {
         <AnimateIn className="mx-auto max-w-2xl text-center">
           <p className="section-eyebrow justify-center">Integrations</p>
           <h2 className="display-section mt-5">Connect VoilitAI to Your Business</h2>
+          <p className="lede mt-5 text-[var(--fg-muted)]">
+            Built-in connectors for calendar, CRM, messaging, and calling — plus custom APIs for everything else.
+          </p>
         </AnimateIn>
         <div className="mt-10">
           <IntegrationsDiagram />
         </div>
+        <AnimateIn delay={80}>
+          <ConnectorsGrid />
+        </AnimateIn>
       </section>
 
       {/* 9 Product dashboard */}
