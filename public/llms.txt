@@ -1,6 +1,6 @@
 # VoilitAI
 
-> Create your own AI voice employee, without developers. Build, customize, and deploy a voice agent that answers calls, qualifies leads, and helps schedule work for your business.
+> VoilitAI is an AI voice agent platform that lets businesses create AI voice employees to answer calls, qualify leads and book appointments.
 
 - Site: https://voilitai.com
 - Product app: https://app.voilitai.com/
@@ -24,18 +24,26 @@ Voice is available now. Chat, SMS, and website voice are on the roadmap and will
 ## Primary CTAs
 
 - Create Your AI Employee → https://app.voilitai.com/
-- Talk to a Live Demo → https://voilitai.com/contact/
+- Hear a Live Demo → https://voilitai.com/contact/
 
-## Key URLs
+## Key product URLs
 
-- https://voilitai.com/
-- https://voilitai.com/ai-employee/
-- https://voilitai.com/features/
+- https://voilitai.com/ (AI voice agent platform)
+- https://voilitai.com/ai-voice-agents/
+- https://voilitai.com/ai-voice-employees/
+- https://voilitai.com/ai-receptionist/
+- https://voilitai.com/ai-phone-agent/
+- https://voilitai.com/use-cases/
 - https://voilitai.com/solutions/
-- https://voilitai.com/how-it-works/
 - https://voilitai.com/pricing/
-- https://voilitai.com/faq/
-- https://voilitai.com/blog/
+- https://voilitai.com/compare/best-ai-voice-agent-platforms/
+- https://voilitai.com/learn/what-is-an-ai-voice-agent/
+
+## Use cases
+
+- https://voilitai.com/use-cases/appointment-booking/
+- https://voilitai.com/use-cases/lead-qualification/
+- https://voilitai.com/use-cases/after-hours-answering/
 
 ## Industries
 

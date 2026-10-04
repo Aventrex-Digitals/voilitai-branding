@@ -44,6 +44,26 @@ const nextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      // Blueprint-preferred industry URL aliases → existing solution pages
+      {
+        source: '/industries',
+        destination: '/solutions/',
+        permanent: true,
+      },
+      {
+        source: '/industries/:slug',
+        destination: '/solutions/:slug/',
+        permanent: true,
+      },
+      {
+        source: '/industries/:slug/',
+        destination: '/solutions/:slug/',
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return {
       beforeFiles: [

@@ -155,7 +155,50 @@ const ICONS = {
   ),
 };
 
+const FILL_ICONS = {
+  linkedin: (
+    <>
+      <path fill="currentColor" d="M6.5 9.5H3.7V20h2.8V9.5ZM5.1 4a1.65 1.65 0 1 0 0 3.3 1.65 1.65 0 0 0 0-3.3ZM20.3 20h-2.8v-5.6c0-1.5-.5-2.5-1.8-2.5-1 0-1.5.7-1.8 1.3-.1.2-.1.6-.1.9V20h-2.8s.05-9.3 0-10.3h2.8v1.5c.4-.6 1.1-1.7 2.8-1.7 2 0 3.5 1.3 3.5 4.2V20Z" />
+    </>
+  ),
+  facebook: (
+    <path
+      fill="currentColor"
+      d="M14.5 8.2H17V5h-2.5C11.7 5 10 6.9 10 9.6V12H7.5v3.2H10V22h3.2v-6.8h2.6l.5-3.2h-3.1V9.6c0-.8.4-1.4 1.3-1.4Z"
+    />
+  ),
+  instagram: (
+    <>
+      <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="17.2" cy="6.8" r="1.15" fill="currentColor" />
+    </>
+  ),
+  threads: (
+    <path
+      fill="currentColor"
+      fillRule="evenodd"
+      d="M16.55 11.2a5.4 5.4 0 0 0 .1-.95c0-2.7-1.85-4.55-4.55-4.55-2.85 0-4.7 2.05-4.7 4.9 0 3.05 1.85 5.15 4.65 5.15 1.55 0 2.85-.6 3.6-1.65l-1.3-.85c-.5.65-1.3 1-2.3 1-1.7 0-2.85-1.2-2.85-3.05 0-.15 0-.3.05-.4h7.3Zm-5.25-1.35c.25-1.05 1.05-1.75 2.15-1.75 1.15 0 1.85.7 2 1.75h-4.15Z"
+    />
+  ),
+};
+
 export default function Icon({ name, className = 'h-5 w-5' }) {
+  const filled = FILL_ICONS[name];
+
+  if (filled) {
+    return (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        className={className}
+        aria-hidden="true"
+      >
+        {filled}
+      </svg>
+    );
+  }
+
   return (
     <svg
       viewBox="0 0 24 24"

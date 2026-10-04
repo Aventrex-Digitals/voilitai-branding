@@ -1,17 +1,58 @@
 'use client';
 
+import Link from 'next/link';
 import AnimateIn from '@/components/AnimateIn';
 import Icon from '@/components/Icon';
 
 const USE_CASES = [
-  { icon: 'chart', title: 'Sales', description: 'Qualify inbound interest and book the next conversation.' },
-  { icon: 'chat', title: 'Support', description: 'Answer routine questions and escalate when needed.' },
-  { icon: 'scan', title: 'Lead Qualification', description: 'Screen callers against your rules before human time.' },
-  { icon: 'calendar', title: 'Appointment Booking', description: 'Offer availability and confirm appointments live.' },
-  { icon: 'outbound', title: 'Customer Follow-up', description: 'Re-engage quiet leads with timely outbound calls.' },
-  { icon: 'phone', title: 'Reception', description: 'Greet callers, route requests, and capture details.' },
-  { icon: 'bolt', title: 'Outbound Calls', description: 'Run structured outreach without staffing overtime.' },
-  { icon: 'flow', title: 'Operations', description: 'Handle status checks and routine workflow updates.' },
+  {
+    icon: 'calendar',
+    title: 'Appointment booking',
+    description: 'Offer availability and confirm appointments live on the call.',
+    href: '/use-cases/appointment-booking/',
+  },
+  {
+    icon: 'scan',
+    title: 'Lead qualification',
+    description: 'Screen callers against your rules before human time.',
+    href: '/use-cases/lead-qualification/',
+  },
+  {
+    icon: 'phone',
+    title: 'Reception',
+    description: 'Greet callers, route requests, and capture details 24/7.',
+    href: '/ai-receptionist/',
+  },
+  {
+    icon: 'bolt',
+    title: 'After-hours answering',
+    description: 'Cover nights and weekends without overnight staff.',
+    href: '/use-cases/after-hours-answering/',
+  },
+  {
+    icon: 'chart',
+    title: 'Sales intake',
+    description: 'Qualify inbound interest and book the next conversation.',
+    href: '/ai-phone-agent/',
+  },
+  {
+    icon: 'chat',
+    title: 'Support',
+    description: 'Answer routine questions and escalate when needed.',
+    href: '/solutions/customer-support/',
+  },
+  {
+    icon: 'outbound',
+    title: 'Follow-up calls',
+    description: 'Re-engage quiet leads with timely outbound calls.',
+    href: '/ai-phone-agent/',
+  },
+  {
+    icon: 'flow',
+    title: 'Operations',
+    description: 'Handle status checks and routine workflow updates.',
+    href: '/ai-voice-agents/',
+  },
 ];
 
 export default function UseCasesGrid() {
@@ -19,7 +60,7 @@ export default function UseCasesGrid() {
     <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
       {USE_CASES.map((item, i) => (
         <AnimateIn key={item.title} delay={i * 55}>
-          <article className="premium-card group relative overflow-hidden p-5">
+          <Link href={item.href} className="premium-card group relative block overflow-hidden p-5 transition hover:border-violet/40">
             <Icon name={item.icon} className="h-5 w-5 text-violet transition duration-300 group-hover:scale-110" />
             <h3 className="mt-4 text-base font-semibold tracking-tight">{item.title}</h3>
             <p className="mt-2 text-sm leading-relaxed text-[var(--fg-muted)]">{item.description}</p>
@@ -38,7 +79,7 @@ export default function UseCasesGrid() {
                 />
               ))}
             </div>
-          </article>
+          </Link>
         </AnimateIn>
       ))}
     </div>

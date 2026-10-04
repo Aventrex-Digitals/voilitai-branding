@@ -17,20 +17,20 @@ export default function HeroSection() {
         <div className="mx-auto max-w-4xl text-center">
 
           <h1 className="animate-on-load animate-on-load-delay-2 mt-4 font-display text-[clamp(2.5rem,6.5vw,4.75rem)] font-semibold leading-[1.02] tracking-[-0.045em] text-[var(--fg)]">
-            AI Voice Employees for Modern Businesses
+              The AI voice agent platform for businesses that can&apos;t miss a call
           </h1>
 
           <p className="animate-on-load animate-on-load-delay-3 mx-auto mt-6 max-w-2xl text-[clamp(1.05rem,1.5vw,1.2rem)] leading-[1.55] tracking-[-0.01em] text-[var(--fg-muted)]">
-            Create an AI employee that answers your phone, handles callers, and books appointments
-            around the clock.
+            Create AI voice employees that answer every call, qualify leads, and book appointments
+            live in days, not months.
           </p>
 
           <div className="animate-on-load animate-on-load-delay-3 mt-9 flex flex-wrap items-center justify-center gap-3">
             <a href={APP_GET_STARTED} className="btn-primary px-6 py-3.5 text-[0.9rem]">
-              Create Your Voice Employee
+              Create Your AI Voice Employee
             </a>
-            <a href="#how-it-works" className="btn-secondary px-6 py-3.5 text-[0.9rem]">
-              See How It Works
+            <a href="/contact/" className="btn-secondary px-6 py-3.5 text-[0.9rem]">
+              Hear a Live Demo
             </a>
           </div>
         </div>
