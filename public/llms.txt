@@ -1,29 +1,42 @@
 # VoilitAI
 
-> VoilitAI is an AI voice agent platform that lets businesses create AI voice employees to answer calls, qualify leads and book appointments.
-
-- Site: https://voilitai.com
-- Product app: https://app.voilitai.com/
-- Contact: contact@voilitai.com
-- Pricing: https://voilitai.com/pricing/
+> VoilitAI is an AI agent platform that lets businesses create AI employees to answer calls, qualify leads, and book appointments. Voice is live today; chat, SMS, and more share the same agent next.
 
 ## Product
 
-VoilitAI lets businesses create their own AI voice employees. No developer required for the core workflow: create an agent in the dashboard, customize what it knows and does, connect phone numbers and business tools, then deploy.
+- [Homepage](https://voilitai.com/): AI agent platform for businesses
+- [AI voice agents](https://voilitai.com/ai-voice-agents/): Product overview for voice agents
+- [AI voice employees](https://voilitai.com/ai-voice-employees/): Create your own AI employee
+- [AI receptionist](https://voilitai.com/ai-receptionist/): Front-desk call answering
+- [AI phone agent](https://voilitai.com/ai-phone-agent/): Phone agent for inbound and outbound
+- [Features](https://voilitai.com/features/): Platform capabilities
+- [Pricing](https://voilitai.com/pricing/): Plans and usage
+- [How it works](https://voilitai.com/how-it-works/): Create, connect, deploy
+- [Product app](https://app.voilitai.com/): Create your AI employee
 
-Voice is available now. Chat, SMS, and website voice are on the roadmap and will use the same agent brain.
+## Use cases
 
-## For business owners
+- [Use cases](https://voilitai.com/use-cases/): All business use cases
+- [Appointment booking](https://voilitai.com/use-cases/appointment-booking/)
+- [Lead qualification](https://voilitai.com/use-cases/lead-qualification/)
+- [After-hours answering](https://voilitai.com/use-cases/after-hours-answering/)
 
-- Answer calls automatically
-- Recover missed calls
-- Qualify leads
-- Help schedule appointments through connected tools
-- Hand off to a human with context
+## Industries
+
+- [Solutions](https://voilitai.com/solutions/): Industry solutions index
+- [Healthcare & dental](https://voilitai.com/solutions/healthcare/)
+- [Auto repair](https://voilitai.com/solutions/auto-repair/)
+- [HVAC & home services](https://voilitai.com/solutions/home-services/)
+- [Real estate](https://voilitai.com/solutions/real-estate/)
+- [Lead qualification](https://voilitai.com/solutions/lead-qualification/)
+- [Customer support](https://voilitai.com/solutions/customer-support/)
+- [Financial services](https://voilitai.com/solutions/financial-services/)
+- [Insurance](https://voilitai.com/solutions/insurance/)
+- [Legal](https://voilitai.com/solutions/legal/)
 
 ## Built-in connectors
 
-Connect from Integrations → Connect a service in the product:
+Connect from Integrations in the product:
 
 - Google Calendar (OAuth) — calendar.book
 - HubSpot (OAuth) — hubspot.contact
@@ -34,41 +47,19 @@ Connect from Integrations → Connect a service in the product:
 - Outbound calls (platform calling) — voice.call
 - Custom APIs — connect another system (EHR, CRM, or any REST API)
 
-## Primary CTAs
+## Learn
 
-- Create Your AI Employee → https://app.voilitai.com/
-- Hear a Live Demo → https://voilitai.com/contact/
+- [Learn hub](https://voilitai.com/learn/)
+- [What is an AI voice agent?](https://voilitai.com/learn/what-is-an-ai-voice-agent/)
+- [Best AI voice agent platforms](https://voilitai.com/compare/best-ai-voice-agent-platforms/)
+- [Blog](https://voilitai.com/blog/)
+- [FAQ](https://voilitai.com/faq/)
+- [About](https://voilitai.com/about/)
+- [Contact](https://voilitai.com/contact/)
+- [Privacy](https://voilitai.com/privacy/)
+- [Terms](https://voilitai.com/terms/)
 
-## Key product URLs
+## Optional
 
-- https://voilitai.com/ (AI voice agent platform)
-- https://voilitai.com/ai-voice-agents/
-- https://voilitai.com/ai-voice-employees/
-- https://voilitai.com/ai-receptionist/
-- https://voilitai.com/ai-phone-agent/
-- https://voilitai.com/use-cases/
-- https://voilitai.com/solutions/
-- https://voilitai.com/pricing/
-- https://voilitai.com/compare/best-ai-voice-agent-platforms/
-- https://voilitai.com/learn/what-is-an-ai-voice-agent/
-
-## Use cases
-
-- https://voilitai.com/use-cases/appointment-booking/
-- https://voilitai.com/use-cases/lead-qualification/
-- https://voilitai.com/use-cases/after-hours-answering/
-
-## Industries
-
-- https://voilitai.com/solutions/healthcare/ (dental & clinics)
-- https://voilitai.com/solutions/auto-repair/
-- https://voilitai.com/solutions/home-services/ (HVAC, plumbing)
-- https://voilitai.com/solutions/real-estate/
-- https://voilitai.com/solutions/lead-qualification/
-- https://voilitai.com/solutions/customer-support/
-- https://voilitai.com/solutions/financial-services/
-- https://voilitai.com/solutions/insurance/
-- https://voilitai.com/solutions/legal/
-
-Sitemap: https://voilitai.com/sitemap.xml
-Robots: https://voilitai.com/robots.txt
+- [Sitemap](https://voilitai.com/sitemap.xml)
+- [Robots](https://voilitai.com/robots.txt)

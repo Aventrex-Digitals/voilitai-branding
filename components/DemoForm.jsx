@@ -120,10 +120,12 @@ export default function DemoForm({ onSuccess, compact = false }) {
           placeholder="After-hours booking, overflow, outbound reminders…"
         />
       </label>
-      <label className="sr-only" aria-hidden="true">
-        Website
-        <input name="website" type="text" tabIndex={-1} autoComplete="off" />
-      </label>
+      <div className="hidden" aria-hidden="true">
+        <label>
+          Website
+          <input name="website" type="text" tabIndex={-1} autoComplete="off" />
+        </label>
+      </div>
       <label className="flex items-start gap-2 text-sm text-[var(--fg-muted)] sm:col-span-2">
         <input
           name="consent"

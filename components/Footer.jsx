@@ -30,6 +30,7 @@ function SocialItem({ item }) {
 
   return (
     <span
+      role="img"
       aria-label={`${item.label} (link coming soon)`}
       title={`${item.label} — link coming soon`}
       className={`${className} opacity-70`}
@@ -54,7 +55,11 @@ export default function Footer() {
                 {CONTACT_EMAIL}
               </a>
             </p>
-            <div className="mt-5 flex flex-wrap items-center gap-2.5" aria-label="Social profiles">
+            <div
+              role="group"
+              className="mt-5 flex flex-wrap items-center gap-2.5"
+              aria-label="Social profiles"
+            >
               {SOCIAL_LINKS.map((item) => (
                 <SocialItem key={item.id} item={item} />
               ))}

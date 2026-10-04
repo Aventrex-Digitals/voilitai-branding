@@ -20,6 +20,7 @@ const RECENT = [
 export default function ProductDashboard({ className = '', showChrome = true, bare = false }) {
   return (
     <div
+      role="region"
       className={`${bare ? 'overflow-hidden bg-[var(--card)]' : 'ui-shell'} ${className}`}
       aria-label="VoilitAI product dashboard preview"
     >

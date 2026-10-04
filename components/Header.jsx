@@ -89,6 +89,7 @@ export default function Header() {
                     }`}
                     aria-expanded={industriesOpen}
                     aria-controls={menuId}
+                    aria-haspopup="true"
                     onClick={() => setIndustriesOpen((value) => !value)}
                     onFocus={openIndustries}
                   >
@@ -101,8 +102,10 @@ export default function Header() {
 
                   <div
                     id={menuId}
-                    role="menu"
+                    role="region"
                     aria-label="Industries"
+                    aria-hidden={!industriesOpen}
+                    inert={!industriesOpen ? true : undefined}
                     className={`industries-mega absolute left-0 top-[calc(100%+0.65rem)] z-50 w-[min(42rem,calc(100vw-2rem))] ${
                       industriesOpen ? 'is-open' : ''
                     }`}
@@ -122,7 +125,7 @@ export default function Header() {
                         <Link
                           href="/solutions/"
                           className="hidden shrink-0 text-sm font-semibold text-violet sm:inline-flex"
-                          role="menuitem"
+                          tabIndex={industriesOpen ? undefined : -1}
                         >
                           View all →
                         </Link>
@@ -133,7 +136,7 @@ export default function Header() {
                           <Link
                             key={industry.slug}
                             href={industry.href}
-                            role="menuitem"
+                            tabIndex={industriesOpen ? undefined : -1}
                             className="group flex items-start gap-3 rounded-[1rem] px-3 py-3 transition hover:bg-[color-mix(in_srgb,var(--fg)_5%,transparent)]"
                           >
                             <span className="mt-0.5 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] text-violet transition group-hover:border-violet/35 group-hover:bg-violet/10">
@@ -154,8 +157,8 @@ export default function Header() {
                       <div className="border-t border-[var(--border)] bg-[color-mix(in_srgb,var(--band)_70%,transparent)] px-5 py-3.5">
                         <Link
                           href="/solutions/"
+                          tabIndex={industriesOpen ? undefined : -1}
                           className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--fg)] transition hover:text-violet"
-                          role="menuitem"
                         >
                           Explore all industries
                           <Icon name="arrow" className="h-3.5 w-3.5" />
