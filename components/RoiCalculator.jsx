@@ -45,7 +45,7 @@ export default function RoiCalculator() {
             />
           </label>
           <p className="text-xs leading-relaxed text-[var(--fg-muted)]">
-            Assumes 1 in 4 missed callers would have booked. Illustrative — your numbers depend on
+            Assumes 1 in 4 missed callers would have booked. Illustrative. Your numbers depend on
             call volume and job value.
           </p>
         </div>

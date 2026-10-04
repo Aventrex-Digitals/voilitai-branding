@@ -9,7 +9,7 @@ import { PAGE_META } from '@/lib/seo';
 
 const CRUMBS = [
   { name: 'Home', path: '/' },
-  { name: 'Solutions', path: '/solutions/' },
+  { name: 'Industries', path: '/solutions/' },
 ];
 
 export const metadata = PAGE_META.solutions;
@@ -23,7 +23,7 @@ export default function SolutionsPage() {
         crumbs={CRUMBS}
         eyebrow="Industries"
         title="AI receptionists and voice employees for phone-driven businesses"
-        lead="Dental, auto repair, HVAC, plumbing, real estate, clinics, and more — create an AI employee that answers the calls your team cannot."
+        lead="Dental, auto repair, HVAC, plumbing, real estate, clinics, and more, create an AI employee that answers the calls your team cannot."
       />
       <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
         <div className="grid gap-5 md:grid-cols-2">

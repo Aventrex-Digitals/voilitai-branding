@@ -16,7 +16,7 @@ export const metadata = PAGE_META.howItWorks;
 const DETAIL = [
   {
     title: 'Create your AI employee',
-    text: 'Start in the dashboard. Name your agent, pick a voice, and define the greeting. You are creating a real AI employee for your business — not waiting on a custom software project.',
+    text: 'Start in the dashboard. Name your agent, pick a voice, and define the greeting. You are creating a real AI employee for your business, not waiting on a custom software project.',
   },
   {
     title: 'Customize what it knows and does',

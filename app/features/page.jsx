@@ -22,7 +22,7 @@ export default function FeaturesPage() {
         crumbs={CRUMBS}
         eyebrow="Platform"
         title="Everything you need to create and deploy an AI voice employee"
-        lead="Natural voice, a no-code builder, phone deployment, tool connections, and warm handoff — so you can answer calls without hiring another full-time receptionist."
+        lead="Natural voice, a no-code builder, phone deployment, tool connections, and warm handoff, so you can answer calls without hiring another full-time receptionist."
       />
 
       <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">

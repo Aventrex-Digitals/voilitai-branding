@@ -2,7 +2,7 @@ import { revalidatePath, revalidateTag } from 'next/cache';
 
 /**
  * Aventrex publish hook.
- * POST { secret, slug } — secret must match REVALIDATE_SECRET
+ * POST { secret, slug }. Secret must match REVALIDATE_SECRET
  * (same value as Aventrex VOILIT_REVALIDATE_SECRET).
  */
 export async function POST(request) {

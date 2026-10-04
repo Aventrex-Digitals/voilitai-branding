@@ -23,7 +23,7 @@ export default function DemoForm({ onSuccess, compact = false }) {
     setStatus('sending');
 
     const payload = {
-      _subject: `VoilitAI demo request — ${data.name}`,
+      _subject: `VoilitAI demo request: ${data.name}`,
       _template: 'table',
       _captcha: 'false',
       name: data.name,
@@ -106,8 +106,8 @@ export default function DemoForm({ onSuccess, compact = false }) {
             Select a range
           </option>
           <option>Under 500</option>
-          <option>500 – 2,000</option>
-          <option>2,000 – 10,000</option>
+          <option>500 to 2,000</option>
+          <option>2,000 to 10,000</option>
           <option>10,000+</option>
         </select>
       </label>
@@ -134,7 +134,7 @@ export default function DemoForm({ onSuccess, compact = false }) {
         <span>I agree to be contacted about a VoilitAI demo. We’ll reply within 24 hours.</span>
       </label>
       <button type="submit" className="btn-primary sm:col-span-2" disabled={status === 'sending'}>
-        {status === 'sending' ? 'Sending…' : 'Submit — contact me in 24 hours'}
+        {status === 'sending' ? 'Sending…' : 'Submit: contact me in 24 hours'}
       </button>
     </form>
   );

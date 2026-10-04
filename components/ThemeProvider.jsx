@@ -8,11 +8,11 @@ const ThemeContext = createContext({
 });
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
     const stored = window.localStorage.getItem('voilitai-appearance');
-    const next = stored === 'light' || stored === 'dark' ? stored : 'light';
+    const next = stored === 'light' || stored === 'dark' ? stored : 'dark';
     setTheme(next);
     document.documentElement.classList.toggle('dark', next === 'dark');
   }, []);

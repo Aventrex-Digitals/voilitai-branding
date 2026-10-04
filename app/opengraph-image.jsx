@@ -4,7 +4,7 @@ import { ImageResponse } from 'next/og';
 import { SITE_NAME } from '@/lib/site';
 
 export const dynamic = 'force-static';
-export const alt = `${SITE_NAME} — fast Voice OS agents, a Vapi and Retell alternative`;
+export const alt = `${SITE_NAME}. Fast Voice OS agents, a Vapi and Retell alternative`;
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 

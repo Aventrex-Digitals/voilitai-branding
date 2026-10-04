@@ -1,6 +1,6 @@
 # VoilitAI
 
-> Create your own AI voice employee — without developers. Build, customize, and deploy a voice agent that answers calls, qualifies leads, and helps schedule work for your business.
+> Create your own AI voice employee, without developers. Build, customize, and deploy a voice agent that answers calls, qualifies leads, and helps schedule work for your business.
 
 - Site: https://voilitai.com
 - Product app: https://app.voilitai.com/
@@ -29,6 +29,7 @@ Voice is available now. Chat, SMS, and website voice are on the roadmap and will
 ## Key URLs
 
 - https://voilitai.com/
+- https://voilitai.com/ai-employee/
 - https://voilitai.com/features/
 - https://voilitai.com/solutions/
 - https://voilitai.com/how-it-works/

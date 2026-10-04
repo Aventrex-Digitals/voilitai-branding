@@ -24,7 +24,7 @@ export default function FaqPage() {
         crumbs={CRUMBS}
         eyebrow="FAQ"
         title="Everything teams ask before they point a number at an agent"
-        lead="If you need a security review, a SIP plan, or a custom workflow, start here — then talk to us."
+        lead="If you need a security review, a SIP plan, or a custom workflow, start here, then talk to us."
       />
       <section className="mx-auto max-w-3xl px-4 pb-16 sm:px-6 lg:px-8">
         {ALL_FAQS.map((group) => (

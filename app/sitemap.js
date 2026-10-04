@@ -4,9 +4,10 @@ import { absoluteUrl, SITE_URL } from '@/lib/site';
 
 export const revalidate = 60;
 
-/** Core marketing pages — keep in sync with the app route pages. */
+/** Core marketing pages, keep in sync with the app route pages. */
 const STATIC_PAGES = [
   { path: '/', priority: 1, changeFrequency: 'weekly' },
+  { path: '/ai-employee/', priority: 0.95, changeFrequency: 'weekly' },
   { path: '/features/', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/solutions/', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/how-it-works/', priority: 0.85, changeFrequency: 'monthly' },

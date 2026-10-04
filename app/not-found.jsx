@@ -13,7 +13,7 @@ export default function NotFound() {
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-violet">404</p>
         <h1 className="font-display mt-3 text-4xl font-bold">Page not found</h1>
         <p className="mt-4 text-lg text-[var(--fg-muted)]">
-          That URL does not exist — or it moved when we shipped the VoilitAI brand.
+          That URL does not exist, or it moved when we shipped the VoilitAI brand.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <Link href="/" className="btn-primary">

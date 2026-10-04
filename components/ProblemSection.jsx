@@ -131,16 +131,15 @@ const PROBLEMS = [
 
 export default function ProblemSection() {
   return (
-    <section id="the-problem" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+    <section id="the-problem" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
       <AnimateIn className="max-w-3xl">
-        <p className="section-eyebrow">The Problem</p>
-        <h2 className="font-display mt-4 text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.75rem] lg:leading-[1.12]">
-          Missed calls are missed revenue —{' '}
-          <span className="accent-text">especially after hours</span>
+        <p className="section-eyebrow">The Gap</p>
+        <h2 className="display-section mt-5">
+          Slow response is the silent{' '}
+          <span className="accent-italic">business killer</span>
         </h2>
-        <p className="mt-4 max-w-2xl text-[var(--fg-muted)]">
-          When your team is busy or unavailable, VoilitAI can answer the call, have a conversation
-          with the customer and take the next step.
+        <p className="lede mt-5 max-w-2xl text-[var(--fg-muted)]">
+          Speed to lead is not just a metric. It is the difference between a closed deal and a ghosted prospect.
         </p>
       </AnimateIn>
 
@@ -148,7 +147,7 @@ export default function ProblemSection() {
         {PROBLEMS.map((problem, i) => (
           <AnimateIn key={problem.title} delay={i * 80} className="premium-card flex h-full flex-col p-6">
             <problem.Visual />
-            <h3 className="mt-5 text-lg font-semibold">{problem.title}</h3>
+            <h3 className="mt-5 text-lg font-bold tracking-tight">{problem.title}</h3>
             <p className="mt-2 text-sm leading-relaxed text-[var(--fg-muted)]">{problem.text}</p>
           </AnimateIn>
         ))}

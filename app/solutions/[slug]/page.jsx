@@ -31,7 +31,7 @@ export default async function SolutionPage({ params }) {
       <JsonLd
         data={breadcrumbJsonLd([
           { name: 'Home', path: '/' },
-          { name: 'Solutions', path: '/solutions/' },
+          { name: 'Industries', path: '/solutions/' },
           { name: solution.name, path: `/solutions/${solution.slug}/` },
         ])}
       />
@@ -39,7 +39,7 @@ export default async function SolutionPage({ params }) {
       <PageHero
         crumbs={[
           { name: 'Home', path: '/' },
-          { name: 'Solutions', path: '/solutions/' },
+          { name: 'Industries', path: '/solutions/' },
           { name: solution.name, path: `/solutions/${solution.slug}/` },
         ]}
         eyebrow={solution.eyebrow}

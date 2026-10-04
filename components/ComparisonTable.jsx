@@ -36,7 +36,7 @@ export default function ComparisonTable() {
                       <Icon name="check" className="h-3.5 w-3.5" />
                     </span>
                   ) : (
-                    <span className="text-[var(--fg-muted)]">—</span>
+                    <span className="text-[var(--fg-muted)]">-</span>
                   )}
                 </td>
               ))}

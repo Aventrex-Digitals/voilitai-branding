@@ -1,4 +1,4 @@
-import { Outfit, Inter } from 'next/font/google';
+import { GeistSans } from 'geist/font/sans';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -16,26 +16,14 @@ import {
   KEYWORDS,
 } from '@/lib/site';
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-});
-
-const outfit = Outfit({
-  subsets: ['latin'],
-  variable: '--font-outfit',
-  display: 'swap',
-});
-
 // Keep HTML documents on a short TTL so Hostinger/hCDN cannot pin an old
 // prerender (and its CSS hashes) for a year after the next deploy.
 export const revalidate = 60;
 
 export const viewport = {
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f6f7fb' },
-    { media: '(prefers-color-scheme: dark)', color: '#05060b' },
+    { media: '(prefers-color-scheme: light)', color: '#f5f5f7' },
+    { media: '(prefers-color-scheme: dark)', color: '#050507' },
   ],
   width: 'device-width',
   initialScale: 1,
@@ -105,7 +93,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${outfit.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${GeistSans.variable} dark`} suppressHydrationWarning>
       <body className="flex min-h-screen flex-col font-sans antialiased pb-16 lg:pb-0">
         <ThemeProvider>
           <DemoProvider>

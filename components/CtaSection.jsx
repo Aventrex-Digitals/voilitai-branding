@@ -3,24 +3,26 @@ import BookDemoButton from '@/components/BookDemoButton';
 import { APP_GET_STARTED } from '@/lib/site';
 
 export default function CtaSection({
-  title = 'Create your own AI voice employee',
-  text = 'Build, customize, and deploy an AI employee for your business — without developers. Or talk to a live demo first.',
+  title = 'Create your AI voice employee',
+  text = 'Build, deploy, and manage intelligent voice employees for real business conversations.',
 }) {
   return (
-    <section className="relative overflow-hidden">
-      <div className="relative mx-auto max-w-7xl px-4 py-20 text-center sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden border-t border-[var(--border)]">
+      <div className="absolute inset-0 bg-[var(--band)]" aria-hidden="true" />
+      <div className="pointer-events-none absolute inset-0 hero-glow" aria-hidden="true" />
+      <div className="relative mx-auto max-w-3xl px-4 py-20 text-center sm:px-6 lg:px-8 lg:py-24">
         <AnimateIn>
-          <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">{title}</h2>
+          <h2 className="display-section">{title}</h2>
         </AnimateIn>
         <AnimateIn delay={80}>
-          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-[var(--fg-muted)]">{text}</p>
+          <p className="mx-auto mt-5 max-w-xl lede text-[var(--fg-muted)]">{text}</p>
         </AnimateIn>
         <AnimateIn delay={160}>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
             <a href={APP_GET_STARTED} className="btn-primary">
-              Create Your AI Employee
+              Create Your Voice Employee
             </a>
-            <BookDemoButton className="btn-secondary">Talk to a Live Demo</BookDemoButton>
+            <BookDemoButton className="btn-secondary">Talk to Our Team</BookDemoButton>
           </div>
         </AnimateIn>
       </div>

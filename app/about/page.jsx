@@ -21,19 +21,19 @@ export default function AboutPage() {
         crumbs={CRUMBS}
         eyebrow="Company"
         title={`${SITE_NAME} helps businesses create their own AI voice employees`}
-        lead="We build software for operators who need calls answered, leads qualified, and appointments handled — without waiting on a developer to ship a custom bot."
+        lead="We build software for operators who need calls answered, leads qualified, and appointments handled, without waiting on a developer to ship a custom bot."
       />
       <article className="mx-auto max-w-3xl px-4 pb-16 text-lg leading-relaxed text-[var(--fg-muted)] sm:px-6 lg:px-8">
         <p>
           VoilitAI is the branded AI voice platform from Aventrex Digital. The product lets you
-          create, customize, and deploy an AI voice employee for your business — then connect your
+          create, customize, and deploy an AI voice employee for your business, then connect your
           phone lines and tools so it can do real work on the call.
         </p>
         <h2 className="font-display mt-10 text-2xl font-bold text-[var(--fg)]">What we believe</h2>
         <p className="mt-4">
-          You shouldn&apos;t need a developer to create an AI employee. Latency matters — if the
-          agent pauses, callers hang up. Actions matter — if it cannot help book, qualify, or
-          transfer, it is just a talking FAQ. Control matters — your AI employee should follow your
+          You shouldn&apos;t need a developer to create an AI employee. Latency matters. If the
+          agent pauses, callers hang up. Actions matter. If it cannot help book, qualify, or
+          transfer, it is just a talking FAQ. Control matters. Your AI employee should follow your
           rules.
         </p>
         <h2 className="font-display mt-10 text-2xl font-bold text-[var(--fg)]">How we work</h2>

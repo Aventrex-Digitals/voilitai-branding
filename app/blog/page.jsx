@@ -23,7 +23,7 @@ export default async function BlogPage() {
       <PageHero
         crumbs={CRUMBS}
         eyebrow="Blog"
-        title="Clear writing on voice AI — not another hype roundup"
+        title="Clear writing on voice AI, not another hype roundup"
         lead="Guides for operators who have to put a number in production: ROI, compliance, conversation design, and what to automate first."
       />
       <section className="mx-auto w-full max-w-[90rem] px-4 pb-20 sm:px-6 lg:px-8">

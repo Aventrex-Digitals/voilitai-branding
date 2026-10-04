@@ -94,7 +94,7 @@ export default function TermsPage() {
         </p>
         <p>
           <strong>Not emergency services.</strong> The Services are not a replacement for 911, 112,
-          or any public emergency number. Agents may fail, misroute, or be unavailable. You must
+          or any public emergency number: agents may fail, misroute, or be unavailable. You must
           not rely on {SITE_NAME} for medical, police, or fire emergencies, and you must not
           market an agent as an emergency line.
         </p>
@@ -166,7 +166,7 @@ export default function TermsPage() {
           <li>Keeping numbers you bring via SIP in good standing with your carrier.</li>
         </ul>
         <p>
-          Carriers and regulators — not {SITE_NAME} — decide whether a number is labeled as spam.
+          Carriers and regulators, not {SITE_NAME}, decide whether a number is labeled as spam.
           We provide tools (verified numbers, branded caller ID where available) but we do not
           guarantee answer rates or that a number will stay unlabeled.
         </p>
@@ -188,7 +188,7 @@ export default function TermsPage() {
         <ul>
           <li>
             <strong>Plans.</strong> Features, included minutes, overage rates, and support levels
-            are described on the pricing page and in the product. Prices in the admin portal /
+            are described on the pricing page and in the product, prices in the admin portal /
             checkout control if they differ from marketing copy.
           </li>
           <li>
@@ -301,8 +301,8 @@ export default function TermsPage() {
         </p>
         <p>
           We will defend you against a third-party claim that the unmodified Services, as provided
-          by us, directly infringe a U.S. patent or copyright, and we will pay resulting damages
-          finally awarded — provided you give prompt notice and control of the defense. We may
+          by us, directly infringe a U.S. Patent or copyright, and we will pay resulting damages
+          finally awarded, provided you give prompt notice and control of the defense. We may
           modify the Services, obtain a license, or terminate the affected feature with a prorated
           refund. This obligation does not apply to claims based on Customer Content, combinations
           with third-party systems, or use after we notify you to stop.

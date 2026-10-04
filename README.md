@@ -1,6 +1,6 @@
 # VoilitAI marketing site
 
-Premium branding site for **voilitai** (the VoiceOS product, rebranded). Dark-first theme matching the cyan–violet logo.
+Premium branding site for **voilitai** (the VoiceOS product, rebranded). Dark-first theme matching the cyan-violet logo.
 
 ## Stack
 

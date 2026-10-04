@@ -150,7 +150,7 @@ export default function PrivacyPage() {
           <li>Caller-provided details (appointments, names, account numbers) captured by the agent.</li>
         </ul>
         <p>
-          That content can include personal information — and, in some deployments, sensitive data
+          That content can include personal information, and, in some deployments, sensitive data
           such as health or financial details. Customers decide what their agents ask for and how
           long recordings are kept.
         </p>
@@ -185,19 +185,19 @@ export default function PrivacyPage() {
         <p>Where GDPR or UK GDPR applies, we rely on:</p>
         <ul>
           <li>
-            <strong>Contract</strong> — to provide the Services you or your organization requested
+            <strong>Contract</strong>: to provide the Services you or your organization requested
             (account, billing, running an agent).
           </li>
           <li>
-            <strong>Legitimate interests</strong> — to secure the platform, prevent abuse, understand
+            <strong>Legitimate interests</strong>: to secure the platform, prevent abuse, understand
             product usage, and respond to business inquiries, balanced against your rights.
           </li>
           <li>
-            <strong>Consent</strong> — where we ask for it (for example optional marketing, or certain
+            <strong>Consent</strong>: where we ask for it (for example optional marketing, or certain
             cookies). You can withdraw consent at any time.
           </li>
           <li>
-            <strong>Legal obligation</strong> — tax, accounting, lawful requests, and similar duties.
+            <strong>Legal obligation</strong>: tax, accounting, lawful requests, and similar duties.
           </li>
         </ul>
         <p>
@@ -211,7 +211,7 @@ export default function PrivacyPage() {
           <li>
             <strong>Service providers / subprocessors</strong> who host infrastructure, send email,
             process payments, accept demo forms, provide telephony or SIP, transcribe speech, or
-            store backups — under contracts that limit their use of the data.
+            store backups, under contracts that limit their use of the data.
           </li>
           <li>
             <strong>Integrations you enable</strong> (CRM, calendar, helpdesk, automation tools).
@@ -258,11 +258,11 @@ export default function PrivacyPage() {
         <p>We use:</p>
         <ul>
           <li>
-            <strong>Essential cookies</strong> — session, authentication, CSRF, load balancing, and
+            <strong>Essential cookies</strong>: session, authentication, CSRF, load balancing, and
             theme preference. The site will not work correctly without these.
           </li>
           <li>
-            <strong>Functional cookies</strong> — remember UI settings such as light or dark theme.
+            <strong>Functional cookies</strong>: remember UI settings such as light or dark theme.
           </li>
         </ul>
         <p>
@@ -274,10 +274,10 @@ export default function PrivacyPage() {
         <h2 id="retention">9. Retention</h2>
         <p>We keep information only as long as needed for the purposes above:</p>
         <ul>
-          <li>Demo and sales inquiries — typically up to 24 months, unless you ask us to delete sooner or we need them for a dispute.</li>
-          <li>Account and billing records — for the life of the account plus the period required for tax and accounting (often 7 years).</li>
-          <li>Call recordings, transcripts, and logs — according to the customer’s retention settings, then deleted or de-identified.</li>
-          <li>Security logs — for a limited period appropriate to detect abuse.</li>
+          <li>Demo and sales inquiries, typically up to 24 months, unless you ask us to delete sooner or we need them for a dispute.</li>
+          <li>Account and billing records, for the life of the account plus the period required for tax and accounting (often 7 years).</li>
+          <li>Call recordings, transcripts, and logs, according to the customer’s retention settings, then deleted or de-identified.</li>
+          <li>Security logs, for a limited period appropriate to detect abuse.</li>
         </ul>
         <p>
           Backup copies may persist for a short time after deletion until they rotate out.
@@ -300,7 +300,7 @@ export default function PrivacyPage() {
           consent; and to lodge a complaint with a supervisory authority.
         </p>
         <p>
-          Residents of California and certain other U.S. states may also have rights to know what
+          Residents of California and certain other U.S. States may also have rights to know what
           we collect, request deletion, correct inaccuracies, and opt out of “sale” or “sharing”
           for cross-context advertising. <strong>We do not sell personal information</strong> and we
           do not share it for cross-context behavioral advertising.
@@ -335,7 +335,7 @@ export default function PrivacyPage() {
         <p>
           {SITE_NAME} can be configured for healthcare workflows and supports a HIPAA-ready
           architecture (access control, encryption, auditability). The marketing website and
-          general demo inbox are <strong>not</strong> a HIPAA environment — do not send protected
+          general demo inbox are <strong>not</strong> a HIPAA environment. Do not send protected
           health information (PHI) through the public contact form.
         </p>
         <p>
