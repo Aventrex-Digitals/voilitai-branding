@@ -819,3 +819,52 @@ html.dark .hero-brand-letter:nth-child(8) {
 .input-field::placeholder {
   color: var(--fg-muted);
 }
+
+.roi-range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 18%, var(--border));
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.roi-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  background: var(--accent);
+  border: 2px solid #fff;
+  box-shadow: 0 2px 10px color-mix(in srgb, var(--accent) 45%, transparent);
+  transition: transform 0.2s ease;
+}
+
+.roi-range::-webkit-slider-thumb:hover {
+  transform: scale(1.08);
+}
+
+.roi-range::-moz-range-thumb {
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  background: var(--accent);
+  border: 2px solid #fff;
+  box-shadow: 0 2px 10px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.roi-savings-bar {
+  transition: width 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .roi-savings-bar {
+    transition: none;
+  }
+
+  .roi-range::-webkit-slider-thumb {
+    transition: none;
+  }
+}

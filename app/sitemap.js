@@ -23,6 +23,7 @@ const STATIC_PAGES = [
   { path: '/solutions/', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/how-it-works/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/pricing/', priority: 0.9, changeFrequency: 'weekly' },
+  { path: '/ai-voice-agent-roi-calculator/', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/faq/', priority: 0.75, changeFrequency: 'monthly' },
   { path: '/blog/', priority: 0.8, changeFrequency: 'weekly' },
   { path: '/trust/', priority: 0.7, changeFrequency: 'monthly' },
